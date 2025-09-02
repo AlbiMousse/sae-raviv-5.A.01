@@ -43,7 +43,7 @@ Liste de tous les livrables rédigés :
 
 | **Date**   | **Nom**         | **Lien**                                     |
 |------------|-----------------|----------------------------------------------|
-| xx/xx/xxxx | Nom Étudiant    | [Lien vers livrable](https://github.com)     |
+| xx/xx/xxxx | Nom Livrable    | [Lien vers livrable](https://github.com)     |
 
 ---
 
