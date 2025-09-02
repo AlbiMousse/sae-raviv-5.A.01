@@ -12,14 +12,14 @@ Sprint Semaine 2
 2. Equipe et rôle
 Projet est réalisé par
 
-| **Equipe de travail** |
-|-----------------------|
-| Laguilliez Mathys     |
-| Aussenac Thomas       |
-| Martinez Quentin      |
-| Estienne Alban-Moussa |
-| Giard--Pellat Jules   |
-| Jockin Victor         |
+| **Equipe de travail** |   ** rôle **|
+|-----------------------| |
+| Laguilliez Mathys     | Développeur |
+| Aussenac Thomas       | Product Owner |
+| Martinez Quentin      | Scrum Master |
+| Estienne Alban-Moussa | Développeur |
+| Giard--Pellat Jules   | Développeur |
+| Jockin Victor         | Développeur |
 
 
 
