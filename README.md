@@ -12,13 +12,20 @@ Sprint Semaine 2
 2. Equipe et rôle
 Projet est réalisé par
 
+| **La Tavèrne**        |
 |-----------------------|
 | Laguilliez Mathys     |
+| Da Chao Romain        |
+| Fusi-Belaid Thomas    |
 | Aussenac Thomas       |
+| Biblocque Nolhan      |
 | Martinez Quentin      |
+| Chauvière Romy        |
 | Estienne Alban-Moussa |
 | Giard--Pellat Jules   |
 | Jockin Victor         |
+| Richaudeau Clément    |
+
 
 
 Tuteur/tutrice enseignant(e) de l’équipe
