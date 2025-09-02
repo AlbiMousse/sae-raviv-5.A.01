@@ -6,10 +6,8 @@ Bidon License: MPL-2.0
 
 Ce fichier README.adoc, permettra de présenter notre projet de SAE 5.A.01 Ainsi que les différents livrables et réalisations que nous avons effectués.
 
-1. Sprint courant
-Sprint Semaine 2
 
-2. Equipe et rôle
+1. Equipe et rôle
 Projet est réalisé par
 
 | **Équipe de travail**     | **Rôle**          |
@@ -23,10 +21,10 @@ Projet est réalisé par
 
 
 Tuteur/tutrice enseignant(e) de l’équipe
- Yahn FORMANCZAK, 
- Pascal SOTIN, 
- Esther PENDARIES, 
- Ludo PRADEL
+  - Yahn FORMANCZAK, 
+  - Pascal SOTIN, 
+  - Esther PENDARIES, 
+  - Ludo PRADEL
 
  Se travail est a déstination de Élodie Ducéré, notre contact à l'association Raviv
 
