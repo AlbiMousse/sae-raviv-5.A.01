@@ -26,11 +26,11 @@ Tuteur/tutrice enseignant(e) de l’équipe
   - Esther PENDARIES, 
   - Ludo PRADEL
 
- Se travail est a déstination de Élodie Ducéré, notre contact à l'association Raviv
+ Se travail est a déstination de Élodie Ducéré, notre contact avec l'association Raviv
 
  
 3. Sujet du projet
-Ce projet consiste à l'unification du système d’authentification des différentesapplications : NAS, forum, blog…
+Ce projet consiste à l'unification du système d’authentification des différentes applications : NAS, forum, blog…
 
 4. Livrables
 Date	Nom	Lien
