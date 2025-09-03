@@ -1,0 +1,11 @@
+= DOCUMENTATION TECHNIQUE
+include::template/params.adoc[]
+
+== 1. Présentation de l'application
+== 2. Architecture
+== 3. Conception et mise en oeuvre de fonctionnalités
+== 4. Procédures d'installation
+
+---
+
+include::template/footer.adoc[]
