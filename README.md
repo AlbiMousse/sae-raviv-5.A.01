@@ -43,7 +43,9 @@ Liste de tous les livrables rédigés :
 
 | **Date**   | **Nom**         | **Lien**                                     |
 |------------|-----------------|----------------------------------------------|
-| xx/xx/xxxx | Nom Livrable    | [Lien vers livrable](https://github.com)     |
+| xx/xx/xxxx | Document utilisateur    | [Document utilisateur](https://github.com/AlbiMousse/sae-raviv-5.A.01/blob/main/docs/docuser.adoc)     |
+| xx/xx/xxxx| Document technique| [Document Technique](https://github.com/AlbiMousse/sae-raviv-5.A.01/blob/main/docs/doctech.adoc)|
+
 
 ---
 
