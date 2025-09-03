@@ -18,7 +18,7 @@ Projet réalisé par :
 | Aussenac Thomas            | Product Owner   |
 | Martinez Quentin           | Scrum Master    |
 | Estienne Alban-Moussa      | Développeur     |
-| Giard-Pellat Jules         | Développeur     |
+| Giard--Pellat Jules         | Développeur     |
 | Jockin Victor              | Développeur     |
 
 **Tuteurs de l’équipe :**  
