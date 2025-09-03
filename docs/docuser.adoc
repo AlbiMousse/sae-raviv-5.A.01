@@ -1,9 +1,9 @@
 = DOCUMENTATION UTILISATEUR
-include::template/params.adoc[]
+include::https://github.com/AlbiMousse/sae-raviv-5.A.01/blob/main/docs/template/params.adoc[]
 
 == 1. Présentation de l'application
 == 2. Fonctionnalités
 
 ---
 
-include::template/footer.adoc[]
+include::https://github.com/AlbiMousse/sae-raviv-5.A.01/blob/main/docs/template/footer.adoc[]
