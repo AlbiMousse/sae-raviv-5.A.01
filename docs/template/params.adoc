@@ -1,0 +1,14 @@
+// paramètres généraux
+:compat-mode!:
+:toc:
+:toc-title: Sommaire
+:toclevels: 4
+:icons: font
+:stem: latexmath
+:hardbreaks-option:
+
+// paramères relatifs à GitHub
+ifdef::env-github[]
+:note-caption: :information_source:
+:stem: latexmath
+endif::[]

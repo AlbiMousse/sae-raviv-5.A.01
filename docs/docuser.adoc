@@ -1,0 +1,9 @@
+= DOCUMENTATION UTILISATEUR
+include::template/params.adoc[]
+
+== 1. Présentation de l'application
+== 2. Fonctionnalités
+
+---
+
+include::template/footer.adoc[]
