@@ -14,12 +14,12 @@ Projet réalisé par :
 
 | **Équipe de travail**     | **Rôle**        |
 |----------------------------|-----------------|
-| Laguilliez Mathys          | Développeur     |
+| [Laguilliez Mathys](https://github.com/LaguilliezMathys)          | Développeur     |
 | Aussenac Thomas            | Product Owner   |
-| Martinez Quentin           | Scrum Master    |
-| Estienne Alban-Moussa      | Développeur     |
-| Giard--Pellat Jules         | Développeur     |
-| Jockin Victor              | Développeur     |
+| [Martinez Quentin](https://github.com/Quentin158)           | Scrum Master    |
+| [Estienne Alban-Moussa](https://github.com/AlbiMousse)      | Développeur     |
+| [Giard--Pellat Jules](https://github.com/Cracotte-Mu-Da)         | Développeur     |
+| [Jockin Victor](https://github.com/victorjockin)              | Développeur     |
 
 **Tuteurs de l’équipe :**  
 - Yahn Formanczak  
@@ -27,7 +27,7 @@ Projet réalisé par :
 - Esther Pendariès  
 - Ludo Pradel  
 
-Ce travail est à destination d’**Élodie Ducéré**, notre contact avec l’association **Raviv**.
+Ce travail est à destination d’**Élodie Ducéré**, notre contact avec l’association [**Raviv**](https://www.raviv-tlse.org).
 
 ---
 
@@ -43,8 +43,8 @@ Liste de tous les livrables rédigés :
 
 | **Date**   | **Nom**         | **Lien**                                     |
 |------------|-----------------|----------------------------------------------|
-| xx/xx/xxxx | Document utilisateur    | [Document utilisateur](https://github.com/AlbiMousse/sae-raviv-5.A.01/blob/main/docs/docuser.adoc)     |
-| xx/xx/xxxx| Document technique| [Document Technique](https://github.com/AlbiMousse/sae-raviv-5.A.01/blob/main/docs/doctech.adoc)|
+| Sem.36 | Document utilisateur    | [Document utilisateur](https://github.com/AlbiMousse/sae-raviv-5.A.01/blob/main/docs/docuser.adoc)     |
+| | Document technique| [Document technique](https://github.com/AlbiMousse/sae-raviv-5.A.01/blob/main/docs/doctech.adoc)|
 
 
 ---
@@ -59,11 +59,11 @@ Destinée aux développeurs et contributeurs techniques. Elle décrit la concept
 
 ### 4.2. 🛠️ Documentation technique  
 Destinée aux développeurs et contributeurs techniques. Elle contient des informations détaillées sur l’architecture, le code et les technologies utilisées.  
-🔗 Lien : Documentation Technique  
+🔗 Lien : [Documentation Technique](https://github.com/AlbiMousse/sae-raviv-5.A.01/blob/main/docs/doctech.adoc)
 
 ### 4.3. 🧑‍💻 Documentation utilisateur  
 Destinée aux utilisateurs finaux. Elle explique comment utiliser le projet et ses fonctionnalités.  
-🔗 Lien : Documentation Utilisateur  
+🔗 Lien : [Documentation Utilisateur](https://github.com/AlbiMousse/sae-raviv-5.A.01/blob/main/docs/docuser.adoc)  
 
 ### 4.4. ✅ Cahier de tests  
 Ce document détaille les cas de tests pour valider les fonctionnalités du projet en fonction des rôles définis (visiteur, client, administrateur). Chaque cas de test comprend les préconditions, actions à réaliser et résultats attendus.  
@@ -82,8 +82,8 @@ Notre board permet de suivre l’état d’avancement des tâches. Il est organi
 - ⏳ **En cours** : Tâches en cours de réalisation  
 - ✅ **Terminé** : Tâches terminées  
 
-🔗 Lien : Board  
+🔗 Lien : [Board](https://github.com/users/AlbiMousse/projects/1)  
 
 ### 5.2. 🎯 Milestones  
 Les milestones représentent chaque sprint du projet, avec leurs objectifs, délais et un avancement mesuré en pourcentage.  
-🔗 Lien : Milestones  
+🔗 Lien : [Milestones](https://github.com/AlbiMousse/sae-raviv-5.A.01/milestones)  
