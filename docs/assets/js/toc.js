@@ -1,26 +1,36 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const tocContainer = document.getElementById("toc") ;
-  if (!tocContainer) return ;
+function generateTOC() {
+  const toc = document.getElementById("toc") ;
+  if (!toc) return ;
 
-  const headers = document.querySelectorAll("h1, h2, h3, h4") ;
+  toc.innerHTML = "" ;
+
+  const headers = document.querySelectorAll("main h1, main h2, main h3, main h4") ;
   if (headers.length === 0) return ;
 
-  const ul = document.createElement("ul") ;
+  const list = document.createElement("ul") ;
 
-  headers.forEach(header => {
-    if (!header.id) {
-      header.id = header.textContent.trim().toLowerCase()
-        .replace(/[^\w]+/g, "-") ;
-    }
+  headers.forEach(h => {
+    const id = h.id || h.textContent.trim().toLowerCase().replace(/\s+/g, "-") ;
+    h.id = id ;
 
     const li = document.createElement("li") ;
-    li.className = header.tagName.toLowerCase() ;
-    const a = document.createElement("a") ;
-    a.href = `#${header.id}` ;
-    a.textContent = header.textContent ;
-    li.appendChild(a) ;
-    ul.appendChild(li) ;
+    li.style.marginLeft = `${(parseInt(h.tagName[1]) - 1) * 10}px` ;
+
+    const link = document.createElement("a") ;
+    link.href = `#${id}` ;
+    link.textContent = h.textContent ;
+
+    li.appendChild(link) ;
+    list.appendChild(li) ;
   }) ;
-  
-  tocContainer.appendChild(ul) ;
-}) ;
+
+  toc.appendChild(list) ;
+}
+
+document.addEventListener("DOMContentLoaded", generateTOC) ;
+
+const main = document.querySelector("main") ;
+if (main) {
+  const observer = new MutationObserver(() => generateTOC()) ;
+  observer.observe(main, { childList: true, subtree: true }) ;
+}
