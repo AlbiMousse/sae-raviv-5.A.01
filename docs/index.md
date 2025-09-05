@@ -2,5 +2,5 @@
 
 > **Note:** En cours de rédaction.
 
-[Documentation Technique](#doctech)  
-[Documentation Utilisateur](#docuser)
+[Documentation Technique](doctech.md)  
+[Documentation Utilisateur](docuser.md)
