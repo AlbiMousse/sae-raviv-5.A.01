@@ -87,3 +87,16 @@ Notre board permet de suivre l’état d’avancement des tâches. Il est organi
 ### 5.2. 🎯 Milestones  
 Les milestones représentent chaque sprint du projet, avec leurs objectifs, délais et un avancement mesuré en pourcentage.  
 🔗 Lien : [Milestones](https://github.com/AlbiMousse/sae-raviv-5.A.01/milestones)  
+
+### 6. Piste de solution envisagé
+Pour le développement de ce CAS, nous avons le choix entre différentes solutions :
+
+- **Apereo CAS** est un système de CAS qui fonctionne en Java sur le serveur local. Il permet la gestion des accès entre plusieurs applications/sites, que ce soit PHP, Apache, Python, Node ou Java. Il peut utiliser un annuaire LDAP ou une base de données.
+- **Intégration SSO/LDAP YuNoHost** permet également la gestion des accès entre plusieurs applications/sites. Cette solution est plus appropriée pour le projet, car l'existant est hébergé avec YuNoHost. Il utilise son propre LDAP (et comme il existe actuellement plusieurs comptes, nous pouvons simplement les récupérer). Il permettra également de créer un portail plus simplement vers les différentes applications, en prenant en compte les droits et accès des comptes.
+
+|Solution|Avantage|Inconvénients|
+|--------|--------|-------------|
+|Apereo CAS|- Solution robuste et éprouvée<br>- Compatible multi-technologies|- Complexité d’installation<br>- Nécessite des compétences Java|
+|SSO/LDAP YuNoHost|- Intégration facilitée avec l’existant<br>- Gestion centralisée des comptes|- Moins flexible pour des besoins très spécifiques|
+
+Pour ce projet, l’intégration SSO/LDAP via YuNoHost est privilégiée car elle s’adapte mieux à l’environnement existant et simplifie la gestion des accès.
