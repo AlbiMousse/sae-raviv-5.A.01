@@ -1,3 +1,7 @@
+---
+layout: default
+title: "Documentation Technique"
+---
 # DOCUMENTATION TECHNIQUE
 
 ## 1. Présentation de l'application

@@ -1,4 +1,8 @@
-# Documentations
+---
+layout: default
+title: "Accueil"
+---
+# Accueil
 
 > En cours de rédaction.
 

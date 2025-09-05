@@ -1,3 +1,7 @@
+---
+layout: default
+title: "Documentation Utilisateur"
+---
 # DOCUMENTATION UTILISATEUR
 
 ## 1. Présentation de l'application
