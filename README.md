@@ -67,7 +67,11 @@ Destinée aux utilisateurs finaux. Elle explique comment utiliser le projet et s
 
 ### 4.4. ✅ Cahier de tests  
 Ce document détaille les cas de tests pour valider les fonctionnalités du projet en fonction des rôles définis (visiteur, client, administrateur). Chaque cas de test comprend les préconditions, actions à réaliser et résultats attendus.  
-🔗 Lien : Cahier de tests  
+🔗 Lien : Cahier de tests
+
+### 4.5. ✅ Chiffrage du projet  
+Ce document détaille le coût du projet en termes de temps de travail pour l'équipe, ainsi que par membre.
+🔗 Lien : Chiffrage du projet 
 
 ---
 
