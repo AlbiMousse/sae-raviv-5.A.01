@@ -1,0 +1,36 @@
+name: User Story
+description: Description d'une fonctionnalité logicielle
+title: "[US]: "
+labels: ["US"]
+body:
+  - type: input
+    id: us
+    attributes:
+      label: User Story
+      placeholder: En tant que [Persona], je veux [feature], afin que [raison].
+    validations:
+      required: true
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Importance
+      options:
+        - Must
+        - Should
+        - Could
+        - Will
+    validations:
+      required: true
+  - type: textarea
+    id: acceptation
+    attributes:
+      label: Critères d'acceptation
+      description: Éléments d'évaluation de la satisfaction de l'US.
+  - type: textarea
+    id: details
+    attributes:
+      label: Détails
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Tâches associées
