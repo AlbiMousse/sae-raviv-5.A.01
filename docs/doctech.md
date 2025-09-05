@@ -7,7 +7,6 @@
 
 ---
 
-<div align="center">
 **Auteurs**
 Thomas Aussenac  
 Alban-Moussa Estienne  
@@ -18,4 +17,3 @@ Quentin Martinez
 
 **BUT Informatique 3ème Année**  
 IUT de Blagnac, Université Toulouse II - Jean Jaurès (31)
-</div>
