@@ -1,2 +1,6 @@
-= Pour Tester en ASCIIDOC
-Vraiment juste pour tester.
+= Documentations
+
+NOTE: En cours de rédaction.
+
+<<doctech, Documentation Technique>>
+<<docuser, Documentation Utilisateur>>
