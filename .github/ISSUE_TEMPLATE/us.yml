@@ -35,6 +35,6 @@ body:
     attributes:
       label: Tâches associées
       options:
-        - Code
-        - Test
-        - Documentation
+        - label: Code
+        - label: Test
+        - label: Documentation
