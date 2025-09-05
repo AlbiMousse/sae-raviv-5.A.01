@@ -1,3 +1,20 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
 body {
-  background-color: #000;
+  display: flex;
+  padding: 0rem;
+  margin: 0rem;
+  width: 100vw;
+  height: 100vh;
+  background-color: #1b1b1f;
+  color: #dcdcd3;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  overflow-wrap: break-word;
+  unicode-bidi: isolate;
+  font-synthesis: style;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
 }
