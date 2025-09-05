@@ -4,7 +4,7 @@ function generateTOC() {
 
   toc.innerHTML = "" ;
 
-  const headers = document.querySelectorAll("main h1, main h2, main h3, main h4") ;
+  const headers = document.querySelectorAll("main h2, main h3, main h4") ;
   if (headers.length === 0) return ;
 
   const list = document.createElement("ul") ;
