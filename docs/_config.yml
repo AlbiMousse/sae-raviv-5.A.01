@@ -1,2 +1,1 @@
-plugins:
-  - jekyll-asciidoc
+theme: jekyll-theme-minima
