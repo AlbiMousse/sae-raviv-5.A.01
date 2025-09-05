@@ -34,3 +34,7 @@ body:
     id: terms
     attributes:
       label: Tâches associées
+      options:
+        - Code
+        - Test
+        - Documentation
