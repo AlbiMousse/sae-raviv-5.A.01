@@ -3,6 +3,7 @@ layout: default
 title: "Documentation Technique"
 ---
 # DOCUMENTATION TECHNIQUE
+{% toc %}
 
 ## 1. Présentation de l'application
 ## 2. Architecture

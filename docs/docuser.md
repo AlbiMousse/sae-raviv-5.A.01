@@ -3,6 +3,7 @@ layout: default
 title: "Documentation Utilisateur"
 ---
 # DOCUMENTATION UTILISATEUR
+{% toc %}
 
 ## 1. Présentation de l'application
 ## 2. Fonctionnalités
