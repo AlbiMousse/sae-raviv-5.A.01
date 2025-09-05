@@ -3,7 +3,7 @@ layout: default
 title: "Documentation Technique"
 ---
 # DOCUMENTATION TECHNIQUE
-{% toc %}
+{% include toc.html html=content %}
 
 ## 1. Présentation de l'application
 ## 2. Architecture
