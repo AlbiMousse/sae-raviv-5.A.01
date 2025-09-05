@@ -1,0 +1,31 @@
+# author: Victor Jockin
+name: Tâche
+description: Travail nécessaire à l'implémentation d'une User Story
+title: "[TÂCHE] : "
+labels: ["TÂCHE"]
+body:
+  - type: dropdown
+    id: type
+    attributes:
+      label: Type de tâche
+      options:
+        - Développement
+        - Test
+        - Documentation
+    validations:
+      required: true
+  - type: dropdown
+    id: domain
+    attributes:
+      label: Domaine
+      options:
+        - Site Web RAVIV
+        - Forum Discourse
+        - NAS Synology
+        - Autre
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Description

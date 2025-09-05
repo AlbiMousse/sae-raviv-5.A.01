@@ -1,13 +1,14 @@
+# author: Victor Jockin
 name: User Story
 description: Description d'une fonctionnalité logicielle
-title: "[US]: "
+title: "[US] : "
 labels: ["US"]
 body:
   - type: input
     id: us
     attributes:
       label: User Story
-      placeholder: En tant que [Persona], je veux [feature], afin que [raison].
+      placeholder: En tant que [RÔLE], je veux [FONCTIONNALITÉ], afin que [UTILITÉ].
     validations:
       required: true
   - type: dropdown
