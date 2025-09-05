@@ -6,11 +6,10 @@ title: "Documentation Utilisateur"
 
 ## 1. Présentation de l'application
 ## 2. Fonctionnalités
-## 3. jsp
 
 ---
 
-**Auteurs**
+**Auteurs**  
 Thomas Aussenac  
 Alban-Moussa Estienne  
 Jules Giard--Pellat  

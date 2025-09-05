@@ -11,7 +11,7 @@ title: "Documentation Technique"
 
 ---
 
-**Auteurs**
+**Auteurs**  
 Thomas Aussenac  
 Alban-Moussa Estienne  
 Jules Giard--Pellat  
