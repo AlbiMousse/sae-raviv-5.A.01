@@ -28,6 +28,11 @@ nav#toc {
   height: 100%;
   background-color: #161618;
 }
+@media screen and (max-width: 800px) {
+  nav#toc {
+    display: none;
+  }
+}
 
 main {
   display: flex;
