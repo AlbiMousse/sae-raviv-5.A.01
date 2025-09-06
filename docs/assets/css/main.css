@@ -39,16 +39,8 @@ main {
 }
 
 table {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
   box-sizing: border-box;
   border-collapse: collapse;
-}
-tr {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 th, td {
   border: 1px solid #fff;
