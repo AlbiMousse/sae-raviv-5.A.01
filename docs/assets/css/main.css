@@ -57,3 +57,9 @@ blockquote {
 a {
   color: #a8b1ff;
 }
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
