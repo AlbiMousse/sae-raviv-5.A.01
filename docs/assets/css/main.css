@@ -18,3 +18,13 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
 }
+
+nav#toc {
+  display: flex;
+  flex-direction: column;
+  padding: 0rem;
+  margin: 0rem;
+  width: 300px;
+  height: 100%;
+  background-color: #161618;
+}
