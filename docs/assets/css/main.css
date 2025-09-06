@@ -28,3 +28,18 @@ nav#toc {
   height: 100%;
   background-color: #161618;
 }
+
+table {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #fff;
+}
+
+blockquote {
+  border-left: 4px solid #ff5722;
+  padding-left: 1em;
+  margin-left: 0;
+  color: #555;
+  font-style: italic;
+  background: #f9f9f9;
+}
