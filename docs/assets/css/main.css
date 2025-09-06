@@ -38,7 +38,7 @@ main {
   display: flex;
   flex-direction: column;
   flex: 1;
-  padding: 0rem 3rem;
+  padding: 3rem 3rem 1rem 3rem;
   width: 100%;
   overflow-x: hidden;
 }
