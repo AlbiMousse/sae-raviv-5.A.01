@@ -34,27 +34,26 @@ main {
   flex-direction: column;
   flex: 1;
   padding: 0rem 3rem;
-  gap: 1rem;
   width: 100%;
   overflow-x: hidden;
 }
 
 table {
+  display: flex;
   width: 100%;
   box-sizing: border-box;
   border: 1px solid #fff;
 }
 tr {
+  display: flex;
   min-height: 30px;
 }
 
 blockquote {
-  border-left: 4px solid #ff5722;
+  border-left: 4px solid #bbb;
   padding-left: 1em;
   margin-left: 0;
-  color: #555;
   font-style: italic;
-  background: #f9f9f9;
 }
 
 a {
