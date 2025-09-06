@@ -9,9 +9,11 @@ title: "Documentation Utilisateur"
 
 ---
 
-![RAVIV](assets/img/raviv.png)
-![IUT de Blagnac](assets/img/iut-blagnac.jpg)
-![Université Toulouse II - Jean Jaurès](assets/img/ut2j.jpg)
+<img src="assets/img/raviv.png" alt="RAVIV" width="100px">
+
+<img src="assets/img/iut-blagnac.jpg" alt="IUT de Blagnac" width="100px">
+
+<img src="assets/img/ut2j.jpg" alt="UT2J" width="100px">
 
 ---
 
@@ -26,5 +28,5 @@ Quentin Martinez
 **BUT Informatique 3ème Année**  
 IUT de Blagnac, Université Toulouse II - Jean Jaurès (31)
 
-**Destinataire**
+**Destinataire**  
 RAVIV
