@@ -29,10 +29,23 @@ nav#toc {
   background-color: #161618;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 0rem 3rem;
+  gap: 1rem;
+  width: 100%;
+  overflow-x: hidden;
+}
+
 table {
   width: 100%;
   box-sizing: border-box;
   border: 1px solid #fff;
+}
+tr {
+  min-height: 30px;
 }
 
 blockquote {
@@ -42,4 +55,8 @@ blockquote {
   color: #555;
   font-style: italic;
   background: #f9f9f9;
+}
+
+a {
+  color: #a8b1ff;
 }
