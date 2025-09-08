@@ -4,15 +4,21 @@
     <meta charset="UTF-8">
     <title>{{ page.title }}</title>
     <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+    <link rel="preload" href="{{ '/assets/js/date.js' | relative_url }}" as="script">
+    <script src="js/date.js"></script>
   </head>
   <body>
     <nav id="toc"></nav>
     <div id="page">
-      <header>HEADER</header>
+      <header>
+        <a href="https://github.com/AlbiMousse/sae-raviv-5.A.01">SAE-RAVIV-5.A.01</a>
+      </header>
       <main>
         {{ content }}
       </main>
-      <footer>FOOTER</footer>
+      <footer>
+        <span id="year"></span>
+      </footer>
     </div>
     <script src="{{ '/assets/js/toc.js' | relative_url }}"></script>
   </body>
