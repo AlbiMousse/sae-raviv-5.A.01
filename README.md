@@ -43,8 +43,8 @@ Liste de tous les livrables rédigés :
 
 | **Date**   | **Nom**         | **Lien**                                     |
 |------------|-----------------|----------------------------------------------|
-| Sem.36 | Document utilisateur    | [Document utilisateur](https://github.com/AlbiMousse/sae-raviv-5.A.01/blob/main/docs/docuser.adoc)     |
-| | Document technique| [Document technique](https://github.com/AlbiMousse/sae-raviv-5.A.01/blob/main/docs/doctech.adoc)|
+| Sem.36 | Document utilisateur    | [Document Utilisateur](https://albimousse.github.io/sae-raviv-5.A.01/docuser.html)     |
+| | Document technique| [Document Technique](https://albimousse.github.io/sae-raviv-5.A.01/doctech.html)|
 
 
 ---
@@ -53,25 +53,29 @@ Liste de tous les livrables rédigés :
 
 Nous mettons à disposition plusieurs documents pour aider à comprendre et utiliser notre projet.  
 
+> Les sections 4.1 à 4.3 concernent les documentatiions, qui sont toutes accessibles sur [GitHub Pages](https://albimousse.github.io/sae-raviv-5.A.01/).
+
 ### 4.1. 📘 Documentation de conception  
 Destinée aux développeurs et contributeurs techniques. Elle décrit la conception du système, avec des diagrammes UML détaillés et les cas d’utilisation principaux.  
-🔗 Lien : Documentation Conception  
+🔗 Lien : [Document de Conception](https://albimousse.github.io/sae-raviv-5.A.01/docconcept.html)
 
 ### 4.2. 🛠️ Documentation technique  
 Destinée aux développeurs et contributeurs techniques. Elle contient des informations détaillées sur l’architecture, le code et les technologies utilisées.  
-🔗 Lien : [Documentation Technique](https://github.com/AlbiMousse/sae-raviv-5.A.01/blob/main/docs/doctech.adoc)
+🔗 Lien : [Documentation Technique](https://albimousse.github.io/sae-raviv-5.A.01/doctech.html)
 
-### 4.3. 🧑‍💻 Documentation utilisateur  
+### 4.3. 🧑‍💻 Documentation utilisateur
 Destinée aux utilisateurs finaux. Elle explique comment utiliser le projet et ses fonctionnalités.  
-🔗 Lien : [Documentation Utilisateur](https://github.com/AlbiMousse/sae-raviv-5.A.01/blob/main/docs/docuser.adoc)  
+🔗 Lien : [Documentation Utilisateur](https://albimousse.github.io/sae-raviv-5.A.01/docuser.html)  
 
-### 4.4. ✅ Cahier de tests  
-Ce document détaille les cas de tests pour valider les fonctionnalités du projet en fonction des rôles définis (visiteur, client, administrateur). Chaque cas de test comprend les préconditions, actions à réaliser et résultats attendus.  
-🔗 Lien : Cahier de tests
+### 4.4. ✅ Cahier de test
+Ce document détaille les cas de test pour valider les fonctionnalités du projet en fonction des rôles définis (visiteur, client, administrateur). Chaque cas de test comprend les préconditions, actions à réaliser et résultats attendus.  
+🔗 Lien : Cahier de test
+> *Le cahier de test sera rédigé lorsque la solution définitive aura été choisie.*
 
 ### 4.5. ✅ Chiffrage du projet  
 Ce document détaille le coût du projet en termes de temps de travail pour l'équipe, ainsi que par membre.
 🔗 Lien : Chiffrage du projet 
+> *Le chiffrage sera établi à l'issue de la réunion prévue avec **Élodie Ducéré** et **Valentin** Grimaud mercredi 17 septembre 2025.*
 
 ---
 
