@@ -102,7 +102,7 @@ Cette section regroupe les ordres du jour et compte rendus de chaque réunion r�
 
 | **DATE** | **ORDRE DU JOUR** | **COMPTE RENDU** |
 |----------|-------------------|------------------|
-| Jeudi 4 Septembre 2025 | [ODJ1](https://github.com/AlbiMousse/sae-raviv-5.A.01/docs/meetings/ODJ1.pdf) | [CR1](https://github.com/AlbiMousse/sae-raviv-5.A.01/docs/meetings/CR1.pdf) |
+| Jeudi 4 Septembre 2025 | [ODJ1](https://github.com/AlbiMousse/sae-raviv-5.A.01/tree/main/docs/meetings/ODJ1.pdf) | [CR1](https://github.com/AlbiMousse/sae-raviv-5.A.01/tree/main/docs/meetings/CR1.pdf) |
 
 ### 6. Piste de solution envisagé
 Pour le développement de ce CAS, nous avons le choix entre différentes solutions :
