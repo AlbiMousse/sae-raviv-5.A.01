@@ -17,6 +17,7 @@ title: "Documentation Technique"
 ## 3. Conception et mise en oeuvre de fonctionnalités
 ## 4. Procédures d'installation
 ## Table des illustrations
+% lof %
 
 ---
 

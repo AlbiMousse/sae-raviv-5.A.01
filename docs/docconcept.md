@@ -17,13 +17,14 @@ title: "Documentation de Conception"
 ### 2.1 Présentation de la solution
 #### Maquettes
 
-| ![Portail de connexion CAS](assets/img/mockups/mockup-CAS.png) |
+| ![Figure 2.1.1 - Maquette du portail de connexion aux services RAVIV](assets/img/mockups/mockup-CAS.png) |
 |:-----------------------------------------:|
-| *Figure 2.1.1 - Maquette du portail de connexion aux services RAVIV* |
+| Figure 2.1.1 - Maquette du portail de connexion aux services RAVIV |
 
 ### 2.2 Réalisation de la solution
 ## 3. Contraintes techniques
 ## Table des illustrations
+% lof %
 
 ---
 

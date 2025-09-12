@@ -16,11 +16,12 @@ title: "Documentation Utilisateur"
 
 ## 2. Fonctionnalités
 
-| ![Use Case Général](assets/img/uc/uc.png) |
+| ![Figure 2.1 - Use Case Général](assets/img/uc/uc.png) |
 |:-----------------------------------------:|
-| *Figure 2.1 - Use Case Général* |
+| Figure 2.1 - Use Case Général |
 
 ## Table des illustrations
+% lof %
 
 ---
 
