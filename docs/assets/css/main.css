@@ -69,3 +69,11 @@ img {
   height: auto;
   display: block;
 }
+
+/* list of figures */
+/* --------------- */
+
+div#lof {
+  display: flex;
+  flex-direction: column;
+}
