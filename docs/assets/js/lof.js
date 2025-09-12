@@ -21,13 +21,11 @@ function generateIllustrationIndex() {
     const id = img.id || `illustration-${i+1}` ;
     img.id = id ;
 
-    const li = document.createElement("li") ;
     const link = document.createElement("a") ;
     link.href = `#${id}` ;
     link.textContent = caption ;
 
-    li.appendChild(link) ;
-    container.appendChild(li) ;
+    container.appendChild(link) ;
   }) ;
 }
 
