@@ -96,6 +96,14 @@ Notre board permet de suivre l’état d’avancement des tâches. Il est organi
 Les milestones représentent chaque sprint du projet, avec leurs objectifs, délais et un avancement mesuré en pourcentage.  
 🔗 Lien : [Milestones](https://github.com/AlbiMousse/sae-raviv-5.A.01/milestones)  
 
+### 5.3. Réunions
+
+Cette section regroupe les ordres du jour et compte rendus de chaque réunion réalisée avec le client.
+
+| **DATE** | **ORDRE DU JOUR** | **COMPTE RENDU** |
+|----------|-------------------|------------------|
+| Jeudi 4 Septembre 2025 | [ODJ1](https://github.com/AlbiMousse/sae-raviv-5.A.01/docs/meetings/ODJ1.pdf) | [CR1](https://github.com/AlbiMousse/sae-raviv-5.A.01/docs/meetings/CR1.pdf) |
+
 ### 6. Piste de solution envisagé
 Pour le développement de ce CAS, nous avons le choix entre différentes solutions :
 
