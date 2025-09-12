@@ -19,6 +19,9 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+/* table of content */
+/* ---------------- */
+
 nav#toc {
   display: flex;
   flex-direction: column;
@@ -32,6 +35,28 @@ nav#toc {
   nav#toc {
     display: none;
   }
+}
+nav#toc ul {
+  list-style: none;
+  margin: 0;
+  padding-left: 1rem;
+}
+nav#toc li {
+  margin: 0.2rem 0;
+}
+nav#toc button {
+  display: block;
+  width: 100%;
+  text-align: left;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.2rem 0.5rem;
+  font-size: 0.95rem;
+}
+nav#toc button:hover {
+  background-color: #f0f0f0;
+  border-radius: 4px;
 }
 
 div#page {
