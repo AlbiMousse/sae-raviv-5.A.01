@@ -46,7 +46,8 @@ Liste de tous les livrables rédigés :
 | Sem.36 | Document utilisateur    | [Document Utilisateur](https://albimousse.github.io/sae-raviv-5.A.01/docuser.html)     |
 | | Document technique| [Document Technique](https://albimousse.github.io/sae-raviv-5.A.01/doctech.html)|
 | | Document conception| [Document de Conception](https://albimousse.github.io/sae-raviv-5.A.01/docconcept.html)|
-| Sem.37 / 38 | Template du portail de connexion    |      |
+| Sem.37 / 38 | Template du portail de connexion    | [Template du portail de connexion](https://github.com/AlbiMousse/sae-raviv-5.A.01/blob/main/login-portal-template/login.html)     |
+| | Environnement de travail| |
 
 
 ---
@@ -95,10 +96,16 @@ Notre board permet de suivre l’état d’avancement des tâches. Il est organi
 🔗 Lien : [Board](https://github.com/users/AlbiMousse/projects/1)  
 
 ### 5.2. 🎯 Milestones  
-Les milestones représentent chaque sprint du projet, avec leurs objectifs, délais et un avancement mesuré en pourcentage.  
+Les milestones représentent chaque sprint du projet, avec leurs objectifs, délais et un avancement mesuré en pourcentage. 
+
 🔗 Lien : [Milestones](https://github.com/AlbiMousse/sae-raviv-5.A.01/milestones)  
 
-### 5.3. Réunions
+### 5.3. 🚀 Release
+La dernière version de notre travail est disponible via le lien ci-dessous.
+
+🔗 Lien : []
+
+### 5.4. Réunions
 
 Cette section regroupe les ordres du jour et compte rendus de chaque réunion réalisée avec le client.
 
