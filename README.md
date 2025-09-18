@@ -103,7 +103,7 @@ Les milestones représentent chaque sprint du projet, avec leurs objectifs, dél
 ### 5.3. 🚀 Release
 La dernière version de notre travail est disponible via le lien ci-dessous.
 
-🔗 Lien : []
+🔗 Lien : [v0.1](https://github.com/AlbiMousse/sae-raviv-5.A.01/releases/tag/v0.1)
 
 ### 5.4. Réunions
 
