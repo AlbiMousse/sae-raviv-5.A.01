@@ -45,6 +45,8 @@ Liste de tous les livrables rédigés :
 |------------|-----------------|----------------------------------------------|
 | Sem.36 | Document utilisateur    | [Document Utilisateur](https://albimousse.github.io/sae-raviv-5.A.01/docuser.html)     |
 | | Document technique| [Document Technique](https://albimousse.github.io/sae-raviv-5.A.01/doctech.html)|
+| | Document conception| [Document de Conception](https://albimousse.github.io/sae-raviv-5.A.01/docconcept.html)|
+| Sem.37 / 38 | Template du portail de connexion    |      |
 
 
 ---
