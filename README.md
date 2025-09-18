@@ -101,7 +101,7 @@ Les milestones représentent chaque sprint du projet, avec leurs objectifs, dél
 Cette section regroupe les ordres du jour et compte rendus de chaque réunion réalisée avec le client.
 
 | **DATE** | **ORDRE DU JOUR** | **COMPTE RENDU** |
-|----------|-------------------|------------------|
+|----------|:-----------------:|:----------------:|
 | Jeudi 4 Septembre 2025 | [ODJ1](https://github.com/AlbiMousse/sae-raviv-5.A.01/tree/main/docs/meetings/ODJ1.pdf) | [CR1](https://github.com/AlbiMousse/sae-raviv-5.A.01/tree/main/docs/meetings/CR1.pdf) |
 
 ### 6. Piste de solution envisagé

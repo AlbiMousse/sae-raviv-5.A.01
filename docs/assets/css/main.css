@@ -52,6 +52,7 @@ nav#toc button {
   border: none;
   cursor: pointer;
   padding: 0.2rem 0.5rem;
+  color: #fff;
   font-size: 0.95rem;
 }
 nav#toc button:hover {

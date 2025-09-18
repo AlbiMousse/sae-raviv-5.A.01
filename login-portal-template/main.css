@@ -1,0 +1,169 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600;700&display=swap');
+
+:root {
+  --main-font: 'Noto Sans', sans-serif;
+  --color-light-grey: #c6b9b9;
+  --color-dark-grey: #877e7e;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  width: 100vw;
+  height: 100vh;
+  margin: 0rem;
+  padding: 0rem 3rem;
+  background-color: #070D2B;
+  font-family: var(--main-font);
+  font-size: 14px;
+}
+
+main {
+  display: flex;
+  width: 850px;
+  height: 500px;
+  border-radius: 0.3rem;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.35);
+}
+
+#ravivLogo {
+  width: 160px;
+  user-select: none;
+}
+
+#connexion {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  min-width: 300px;
+  padding: 2rem 2.5rem;
+  padding-top: 1.5rem;
+  background-color: #fff;
+}
+
+#header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-fields {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
+
+.form-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  width: 100%;
+}
+.form-option {
+  display: flex;
+  gap: 0.4rem;
+  width: 100%;
+}
+
+input {
+  display: flex;
+  padding: 0.5rem;
+  border: 1px solid var(--color-light-grey);
+  border-radius: 0.15rem;
+}
+input[type="checkbox"] {
+  margin: 0rem;
+}
+
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 2.5rem;
+  border: none;
+  border-radius: 0.15rem;
+  background-color: #e7287f;
+  color: #fff;
+  font-family: var(--main-font);
+  transition: background-color 0.3s ease;
+}
+button:hover {
+  background-color: #f178Af;
+  cursor: pointer;
+}
+
+#forgottenPassword {
+  display: flex;
+  width: fit-content;
+  color: #e7287f;
+}
+
+#copyright {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--color-dark-grey);
+  font-size: 12px;
+}
+
+#bigImage {
+  display: flex;
+  width: 100%;
+  background-image: url("res/img/big-image.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 800px) {
+  main {
+    width: fit-content;
+  }
+
+  #bigImage {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  body {
+    padding: 0rem;
+  }
+
+  main {
+    height: 100%;
+    border-radius: 0rem;
+  }
+
+  form {
+    width: 100vw;
+    padding: 3rem 2.5rem;
+    padding-top: 2.5rem;
+  }
+
+  #formContent {
+    margin: auto 0;
+  }
+}
