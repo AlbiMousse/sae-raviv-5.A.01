@@ -47,7 +47,7 @@ Liste de tous les livrables rédigés :
 | | Document technique| [Document Technique](https://albimousse.github.io/sae-raviv-5.A.01/doctech.html)|
 | | Document conception| [Document de Conception](https://albimousse.github.io/sae-raviv-5.A.01/docconcept.html)|
 | Sem.37 / 38 | Template du portail de connexion    | [Template du portail de connexion](https://github.com/AlbiMousse/sae-raviv-5.A.01/blob/main/login-portal-template/login.html)     |
-| | Environnement de travail| [Environnement de travail](https://github.com/AlbiMousse/sae-raviv-5.A.01/blob/main/workspace/docker-compose.yml)|
+| | Environnement de travail| [Environnement de travail](https://github.com/AlbiMousse/sae-raviv-5.A.01/blob/main/infra/docker-compose.yml)|
 
 
 ---
