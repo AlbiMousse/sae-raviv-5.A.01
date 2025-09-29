@@ -1,8 +1,9 @@
+![GitHub Release](https://img.shields.io/github/v/release/AlbiMousse/sae-raviv-5.A.01?include_prereleases)
+
 # SAE-RAVIV-5.A.01
 Réalisation du projet RAVIV  
 
-**SAÉ 5.A.01 — Année 2024-2025**  
-**Licence : MPL-2.0**
+**SAÉ 5.A.01 — Année 2025-2026**  
 
 Ce fichier `README.md` présente notre projet de SAE 5.A.01, ainsi que les différents livrables et réalisations effectués.
 
@@ -77,8 +78,7 @@ Ce document détaille les cas de test pour valider les fonctionnalités du proje
 
 ### 4.5. ✅ Chiffrage du projet  
 Ce document détaille le coût du projet en termes de temps de travail pour l'équipe, ainsi que par membre.
-🔗 Lien : Chiffrage du projet 
-> *Le chiffrage sera établi à l'issue de la réunion avec **Élodie Ducéré** et **Valentin Grimaud** prévue mercredi 17 septembre 2025.*
+🔗 Lien : [Chiffrage du projet](https://github.com/AlbiMousse/sae-raviv-5.A.01/blob/main/docs/chiffrage/Chiffrage.pdf)
 
 ---
 
