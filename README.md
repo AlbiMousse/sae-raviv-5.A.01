@@ -19,7 +19,7 @@ Projet réalisé par :
 | [Martinez Quentin](https://github.com/Quentin158)           | Scrum Master    |
 | [Estienne Alban-Moussa](https://github.com/AlbiMousse)      | Développeur     |
 | [Giard--Pellat Jules](https://github.com/Cracotte-Mu-Da)         | Développeur     |
-| [Jockin Victor](https://github.com/victorjockin)              | Responsalbe Développeur     |
+| [Jockin Victor](https://github.com/victorjockin)              | Responsable Développeur     |
 
 **Tuteurs de l’équipe :**  
 - Yahn Formanczak  
