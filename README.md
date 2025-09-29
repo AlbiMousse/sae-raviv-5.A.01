@@ -117,11 +117,11 @@ Cette section regroupe les ordres du jour et compte rendus de chaque réunion r�
 
 #### Légende
 
-> **T** = Télétravail
+> **T** = Membre en Télétravail
 
-> **X** = Absence (Maladie ou autre)
+> **A** = Membre Absent (pour maladie ou autre)
 
-> **—** = Jours non consacrés au projet
+> **—** = Jours non travaillés / non consacrés au projet
 
 #### Planning
 
@@ -151,11 +151,11 @@ Cette section regroupe les ordres du jour et compte rendus de chaque réunion r�
 |            | 08/09    | 09/09    | 10/09    | 11/09    | 12/09    |
 | | | | | | |
 | TA | | — | T | T | |
-| AE | | — | T | | X |
+| AE | | — | T | | A |
 | JG | | — | T | | | 
 | VJ | | — | T | | |
 | ML | | — | T | T | |
-| QM | | — | T | | X |
+| QM | | — | T | | A |
 
 ---
 
@@ -171,7 +171,7 @@ Cette section regroupe les ordres du jour et compte rendus de chaque réunion r�
 | JG | | | | T | — | 
 | VJ | | | | | — |
 | ML | | | | T | — |
-| QM | | | | | — |
+| QM | A | | | | — |
 
 ---
 
