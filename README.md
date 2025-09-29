@@ -113,7 +113,99 @@ Cette section regroupe les ordres du jour et compte rendus de chaque réunion r�
 |----------|:-----------------:|:----------------:|
 | Jeudi 4 Septembre 2025 | [ODJ1](https://github.com/AlbiMousse/sae-raviv-5.A.01/tree/main/docs/meetings/ODJ1.pdf) | [CR1](https://github.com/AlbiMousse/sae-raviv-5.A.01/tree/main/docs/meetings/CR1.pdf) |
 
-### 6. Piste de solution envisagé
+### 6. Planning Télétravail
+
+#### Légende
+
+> **T** = Télétravail
+
+> **X** = Absence (Maladie ou autre)
+
+> **—** = Jours non consacrés au projet
+
+#### Planning
+
+> Dans ce planning, ne sont considérées que les séances de travail en autonomie.
+
+| **SEMAINE 36** |
+|:--------------:|
+
+| **MEMBRE** | **LUN.** | **MAR.** | **MER.** | **JEU.** | **VEN.** |
+|:----------:|:--------:|:--------:|:--------:|:--------:|:--------:|
+|            | 01/09    | 02/09    | 03/09    | 04/09    | 05/09    |
+| | | | | | |
+| TA | — | | | | T |
+| AE | — | | | | |
+| JG | — | | | | | 
+| VJ | — | | | | |
+| ML | — | | | | T |
+| QM | — | | | | |
+
+---
+
+| **SEMAINE 37** |
+|:--------------:|
+
+| **MEMBRE** | **LUN.** | **MAR.** | **MER.** | **JEU.** | **VEN.** |
+|:----------:|:--------:|:--------:|:--------:|:--------:|:--------:|
+|            | 08/09    | 09/09    | 10/09    | 11/09    | 12/09    |
+| | | | | | |
+| TA | | — | T | T | |
+| AE | | — | T | | X |
+| JG | | — | T | | | 
+| VJ | | — | T | | |
+| ML | | — | T | T | |
+| QM | | — | T | | X |
+
+---
+
+| **SEMAINE 38** |
+|:--------------:|
+
+| **MEMBRE** | **LUN.** | **MAR.** | **MER.** | **JEU.** | **VEN.** |
+|:----------:|:--------:|:--------:|:--------:|:--------:|:--------:|
+|            | 15/09    | 16/09    | 17/09    | 18/09    | 19/09    |
+| | | | | | |
+| TA | | | | T | — |
+| AE | | | | T | — |
+| JG | | | | T | — | 
+| VJ | | | | | — |
+| ML | | | | T | — |
+| QM | | | | | — |
+
+---
+
+| **SEMAINE 39** |
+|:--------------:|
+
+| **MEMBRE** | **LUN.** | **MAR.** | **MER.** | **JEU.** | **VEN.** |
+|:----------:|:--------:|:--------:|:--------:|:--------:|:--------:|
+|            | 22/09    | 23/09    | 24/09    | 25/09    | 26/09    |
+| | | | | | |
+| TA | | T | | T | T |
+| AE | | | | | T |
+| JG | | | | | T |
+| VJ | | | | | |
+| ML | | T | | | T |
+| QM | | | | | |
+
+---
+
+| **SEMAINE 40** |
+|:--------------:|
+
+| **MEMBRE** | **LUN.** | **MAR.** | **MER.** | **JEU.** | **VEN.** |
+|:----------:|:--------:|:--------:|:--------:|:--------:|:--------:|
+|            | 29/09    | 30/09    | 01/10    | 02/10    | 03/10    |
+| | | | | | |
+| TA | T | | | | |
+| AE | T | | | | |
+| JG | T | | | | |
+| VJ | T | | | | |
+| ML | T | | | | |
+| QM | T | | | | |
+
+### 7. Piste de solution envisagé
 Pour le développement de ce CAS, nous avons le choix entre différentes solutions :
 
 - **Apereo CAS** est un système de CAS qui fonctionne en Java sur le serveur local. Il permet la gestion des accès entre plusieurs applications/sites, que ce soit PHP, Apache, Python, Node ou Java. Il peut utiliser un annuaire LDAP ou une base de données.
