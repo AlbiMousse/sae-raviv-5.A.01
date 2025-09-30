@@ -20,7 +20,7 @@ Ce fichier `README.md` présente notre projet de SAE 5.A.01, ainsi que les diff�
 
 ## 1. Présentation de l'équipe
 
-Projet réalisé par :  
+### Équipe de développement
 
 | **Équipe de travail**     | **Rôle**        |
 |----------------------------|-----------------|
@@ -31,13 +31,13 @@ Projet réalisé par :
 | [Giard--Pellat Jules](https://github.com/Cracotte-Mu-Da) | Développeur |
 | [Jockin Victor](https://github.com/victorjockin) | Responsable Développeur |
 
-**Tuteurs de l’équipe :**  
+### Tuteurs pédagogiques
 - Yahn Formanczak  
 - Pascal Sotin  
 - Esther Pendariès  
 - Ludo Pradel  
 
-Ce travail est à destination d’**Élodie Ducéré**, notre contact avec l’association [**Raviv**](https://www.raviv-tlse.org).
+L'ensemble du travail réalisé est à destination d’**Élodie Ducéré**, notre contact avec l’association [**Raviv**](https://www.raviv-tlse.org).
 
 ---
 
@@ -111,18 +111,17 @@ La dernière version de notre travail est disponible via le lien ci-dessous.
 Pour faciliter le suivi, nous avons mis en place plusieurs outils sur GitHub :  
 
 ### Board GitHub  
-Notre board permet de suivre l’état d’avancement des tâches. Il est organisé en trois colonnes :  
+Le board du projet permet de suivre l’état d’avancement des tâches. Celles-ci sont classés selon trois colonnes :
 
-- 📝 **À faire** : Liste des tâches à réaliser  
-- ⏳ **En cours** : Tâches en cours de réalisation  
-- ✅ **Terminé** : Tâches terminées  
+| 📝 **À faire** | ⏳ **En cours** | ✅ **Terminé** |
+|:-:|:-:|:-:|
 
-🔗 Lien : [Board](https://github.com/users/AlbiMousse/projects/1)  
+🔗 Le Board est consultable ici : [Board](https://github.com/users/AlbiMousse/projects/1)  
 
 ### Milestones  
 Les milestones représentent chaque sprint du projet, avec leurs objectifs, délais et un avancement mesuré en pourcentage. 
 
-🔗 Lien : [Milestones](https://github.com/AlbiMousse/sae-raviv-5.A.01/milestones)  
+🔗 Les milestones sont consultables ici : [Milestones](https://github.com/AlbiMousse/sae-raviv-5.A.01/milestones)  
 
 ### Réunions
 
@@ -131,6 +130,7 @@ Cette section regroupe les ordres du jour et compte rendus de chaque réunion r�
 | **DATE** | **ORDRE DU JOUR** | **COMPTE RENDU** |
 |----------|:-----------------:|:----------------:|
 | Jeudi 4 Septembre 2025 | [ODJ1](https://github.com/AlbiMousse/sae-raviv-5.A.01/tree/main/docs/meetings/ODJ1.pdf) | [CR1](https://github.com/AlbiMousse/sae-raviv-5.A.01/tree/main/docs/meetings/CR1.pdf) |
+| Mardi 30 Septembre 2025 | [ODJ2]() | [CR2]() |
 
 ---
 
@@ -212,12 +212,9 @@ Cette section regroupe les ordres du jour et compte rendus de chaque réunion r�
 
 ---
 
-| **SEMAINE 40** |
-|:--------------:|
-
-| **MEMBRE** | **LUN.** | **MAR.** | **MER.** | **JEU.** | **VEN.** |
-|:----------:|:--------:|:--------:|:--------:|:--------:|:--------:|
-|            | 29/09    | 30/09    | 01/10    | 02/10    | 03/10    |
+| **SEMAINE 40** | **LUN.** | **MAR.** | **MER.** | **JEU.** | **VEN.** |
+|:--------------:|:--------:|:--------:|:--------:|:--------:|:--------:|
+| **MEMBRE**     | 29/09    | 30/09    | 01/10    | 02/10    | 03/10    |
 | | | | | | |
 | TA | T | | | | |
 | AE | T | | | | |
