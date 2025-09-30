@@ -10,11 +10,14 @@ Ce fichier `README.md` présente notre projet de SAE 5.A.01, ainsi que les diff�
 ---
 
 ## Sommaire
-[1. Présentation de l'équipe](#1-présentation-de-léquipe)  
-[2. Présentation du projet](#2-présentation-du-projet)  
-[3. Réalisations et livrables](#3-réalisations-et-livrables)  
-[4. Gestion de projet](#4-gestion-de-projet)  
-[5. Planning de télétravail](#5-planning-de-télétravail)
+1. [Présentation de l'équipe](#1-présentation-de-léquipe)  
+1.1. [Équipe de développement](#équipe-de-développement)  
+1.2. [Tuteurs pédagogiques](#tuteurs-pédagogiques)  
+1.3. [Destinataires](#destinataires)
+2. [Présentation du projet](#2-présentation-du-projet)  
+3. [Réalisations et livrables](#3-réalisations-et-livrables)  
+4. [Gestion de projet](#4-gestion-de-projet)  
+5. [Planning de télétravail](#5-planning-de-télétravail)
 
 ---
 
@@ -36,6 +39,8 @@ Ce fichier `README.md` présente notre projet de SAE 5.A.01, ainsi que les diff�
 - Pascal Sotin  
 - Esther Pendariès  
 - Ludo Pradel  
+
+### Destinataires
 
 L'ensemble du travail réalisé est à destination d’**Élodie Ducéré**, notre contact avec l’association [**Raviv**](https://www.raviv-tlse.org).
 
