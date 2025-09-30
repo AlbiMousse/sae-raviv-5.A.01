@@ -10,14 +10,14 @@ Ce fichier `README.md` présente notre projet de SAE 5.A.01, ainsi que les diff�
 ---
 
 ## Sommaire
-1. [Présentation de l'équipe](#1-présentation-de-léquipe)  
-1.1. [Équipe de développement](#équipe-de-développement)  
-1.2. [Tuteurs pédagogiques](#tuteurs-pédagogiques)  
-1.3. [Destinataires](#destinataires)
-2. [Présentation du projet](#2-présentation-du-projet)  
-3. [Réalisations et livrables](#3-réalisations-et-livrables)  
-4. [Gestion de projet](#4-gestion-de-projet)  
-5. [Planning de télétravail](#5-planning-de-télétravail)
+[1. Présentation de l'équipe](#1-présentation-de-léquipe)  
+&nbsp;&nbsp;&nbsp;&nbsp;[Équipe de développement](#équipe-de-développement)  
+&nbsp;&nbsp;&nbsp;&nbsp;[Tuteurs pédagogiques](#tuteurs-pédagogiques)  
+&nbsp;&nbsp;&nbsp;&nbsp;[Destinataires](#destinataires)
+[2. Présentation du projet](#2-présentation-du-projet)  
+[3. Réalisations et livrables](#3-réalisations-et-livrables)  
+[4. Gestion de projet](#4-gestion-de-projet)  
+[5. Planning de télétravail](#5-planning-de-télétravail)
 
 ---
 
