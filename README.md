@@ -30,7 +30,7 @@ Ce fichier `README.md` présente notre projet de SAE 5.A.01, ainsi que les diff�
 &emsp;[4.1. Board GitHub](#board-github)  
 &emsp;[4.1. Milestones](#milestones)  
 &emsp;[4.1. Réunions](#réunions)  
-[5. Planning de télétravail](#5-planning-de-télétravail)
+[5. Planning de télétravail](#5-planning-de-télétravail)  
 &emsp;[5.1. Légende](#légende)  
 &emsp;[5.2. Planning](#planning)  
 
