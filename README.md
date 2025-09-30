@@ -132,9 +132,11 @@ Cette section regroupe les ordres du jour et compte rendus de chaque réunion r�
 |----------|:-----------------:|:----------------:|
 | Jeudi 4 Septembre 2025 | [ODJ1](https://github.com/AlbiMousse/sae-raviv-5.A.01/tree/main/docs/meetings/ODJ1.pdf) | [CR1](https://github.com/AlbiMousse/sae-raviv-5.A.01/tree/main/docs/meetings/CR1.pdf) |
 
-### 5. Planning de télétravail
+---
 
-#### Légende
+## 5. Planning de télétravail
+
+### Légende
 
 > **T** = Membre en Télétravail
 
@@ -142,7 +144,7 @@ Cette section regroupe les ordres du jour et compte rendus de chaque réunion r�
 
 > **—** = Jours non travaillés / non consacrés au projet
 
-#### Planning
+### Planning
 
 > Dans ce planning, ne sont considérées que les séances de travail en autonomie.
 
