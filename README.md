@@ -10,14 +10,29 @@ Ce fichier `README.md` présente notre projet de SAE 5.A.01, ainsi que les diff�
 ---
 
 ## Sommaire
-[1. Présentation de l'équipe](#1-présentation-de-léquipe)  
-&nbsp;&nbsp;&nbsp;&nbsp;[Équipe de développement](#équipe-de-développement)  
-&nbsp;&nbsp;&nbsp;&nbsp;[Tuteurs pédagogiques](#tuteurs-pédagogiques)  
-&nbsp;&nbsp;&nbsp;&nbsp;[Destinataires](#destinataires)
-[2. Présentation du projet](#2-présentation-du-projet)  
-[3. Réalisations et livrables](#3-réalisations-et-livrables)  
-[4. Gestion de projet](#4-gestion-de-projet)  
-[5. Planning de télétravail](#5-planning-de-télétravail)
+1. [Présentation de l'équipe](#1-présentation-de-léquipe)  
+1.1. [Équipe de développement](#équipe-de-développement)  
+1.2. [Tuteurs pédagogiques](#tuteurs-pédagogiques)  
+1.3. [Destinataires](#destinataires)  
+2. [Présentation du projet](#2-présentation-du-projet)  
+2.1 [Client et contexte](#client-et-contexte)  
+2.2 [Solution proposée](#solution-proposée)  
+3. [Réalisations et livrables](#3-réalisations-et-livrables)  
+3.1. [Documents](#documents)  
+3.1.1. [Document de conception](#document-de-conception)  
+3.1.1. [Documentation technique](#documentation-technique)  
+3.1.1. [Documentation utilisateur](#documentation-utilisateur)  
+3.1.1. [Cahier de test](#cahier-de-test)  
+3.1.1. [Chiffrage du projet](#chiffrage-du-projet)  
+3.2. [Tableau des livrables](#tableau-des-livrables)  
+3.3. [Releases](#releases)  
+4. [Gestion de projet](#4-gestion-de-projet)  
+4.1. [Board GitHub](#board-github)  
+4.2. [Milestones](#milestones)  
+4.3. [Réunions](#réunions)  
+5. [Planning de télétravail](#5-planning-de-télétravail)
+5.1. [Légende](#légende)  
+5.2. [Planning](#planning)  
 
 ---
 
@@ -48,6 +63,8 @@ L'ensemble du travail réalisé est à destination d’**Élodie Ducéré**, not
 
 ## 2. Présentation du projet
 
+### Client et contexte
+
 Ce projet consiste en l’unification du système d’authentification des différentes applications : NAS, forum, blog…
 
 ### Solution proposée
@@ -73,24 +90,24 @@ Nous mettons à disposition plusieurs documents pour aider à comprendre et util
 
 > Les sections 4.1 à 4.3 concernent les documentatiions, qui sont toutes accessibles sur [GitHub Pages](https://albimousse.github.io/sae-raviv-5.A.01/).
 
-### Document de Conception  
+#### Document de Conception  
 Destinée aux développeurs et contributeurs techniques. Elle décrit la conception du système, avec des diagrammes UML détaillés et les cas d’utilisation principaux.  
 🔗 Lien : [Document de Conception](https://albimousse.github.io/sae-raviv-5.A.01/docconcept.html)
 
-### Documentation Technique  
+#### Documentation Technique  
 Destinée aux développeurs et contributeurs techniques. Elle contient des informations détaillées sur l’architecture, le code et les technologies utilisées.  
 🔗 Lien : [Documentation Technique](https://albimousse.github.io/sae-raviv-5.A.01/doctech.html)
 
-### Documentation Utilisateur
+#### Documentation Utilisateur
 Destinée aux utilisateurs finaux. Elle explique comment utiliser le projet et ses fonctionnalités.  
 🔗 Lien : [Documentation Utilisateur](https://albimousse.github.io/sae-raviv-5.A.01/docuser.html)  
 
-### Cahier de Test
+#### Cahier de Test
 Ce document détaille les cas de test pour valider les fonctionnalités du projet en fonction des rôles définis (visiteur, client, administrateur). Chaque cas de test comprend les préconditions, actions à réaliser et résultats attendus.  
 🔗 Lien : Cahier de Test
 > *Le cahier de test sera rédigé lorsque la solution définitive aura été choisie.*
 
-### Chiffrage du projet  
+#### Chiffrage du projet  
 Ce document détaille le coût du projet en termes de temps de travail pour l'équipe, ainsi que par membre.
 🔗 Lien : [Chiffrage du projet](https://github.com/AlbiMousse/sae-raviv-5.A.01/blob/main/docs/chiffrage/Chiffrage.pdf)
 
@@ -135,7 +152,7 @@ Cette section regroupe les ordres du jour et compte rendus de chaque réunion r�
 | **DATE** | **ORDRE DU JOUR** | **COMPTE RENDU** |
 |----------|:-----------------:|:----------------:|
 | Jeudi 4 Septembre 2025 | [ODJ1](https://github.com/AlbiMousse/sae-raviv-5.A.01/tree/main/docs/meetings/ODJ1.pdf) | [CR1](https://github.com/AlbiMousse/sae-raviv-5.A.01/tree/main/docs/meetings/CR1.pdf) |
-| Mardi 30 Septembre 2025 | [ODJ2]() | [CR2]() |
+| Mardi 30 Septembre 2025 | [ODJ2](https://github.com/AlbiMousse/sae-raviv-5.A.01/tree/main/docs/meetings/ODJ2.pdf) | [CR2](https://github.com/AlbiMousse/sae-raviv-5.A.01/tree/main/docs/meetings/CR2.pdf) |
 
 ---
 
