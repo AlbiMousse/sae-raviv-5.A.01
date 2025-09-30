@@ -38,7 +38,7 @@ Ce fichier `README.md` présente notre projet de SAE 5.A.01, ainsi que les diff�
 
 ## 1. Présentation de l'équipe
 
-### Équipe de développement
+### 1.1. Équipe de développement
 
 | **Équipe de travail**     | **Rôle**        |
 |----------------------------|-----------------|
@@ -49,13 +49,13 @@ Ce fichier `README.md` présente notre projet de SAE 5.A.01, ainsi que les diff�
 | [Giard--Pellat Jules](https://github.com/Cracotte-Mu-Da) | Développeur |
 | [Jockin Victor](https://github.com/victorjockin) | Responsable Développeur |
 
-### Tuteurs pédagogiques
+### 1.2. Tuteurs pédagogiques
 - Yahn Formanczak  
 - Pascal Sotin  
 - Esther Pendariès  
 - Ludo Pradel  
 
-### Destinataires
+### 1.3. Destinataires
 
 L'ensemble du travail réalisé est à destination d’**Élodie Ducéré**, notre contact avec l’association [**Raviv**](https://www.raviv-tlse.org).
 
@@ -63,11 +63,11 @@ L'ensemble du travail réalisé est à destination d’**Élodie Ducéré**, not
 
 ## 2. Présentation du projet
 
-### Client et contexte
+### 2.1. Client et contexte
 
 Ce projet consiste en l’unification du système d’authentification des différentes applications : NAS, forum, blog…
 
-### Solution proposée
+### 2.2. Solution proposée
 Pour le développement de ce CAS, nous avons le choix entre différentes solutions :
 
 - **Apereo CAS** est un système de CAS qui fonctionne en Java sur le serveur local. Il permet la gestion des accès entre plusieurs applications/sites, que ce soit PHP, Apache, Python, Node ou Java. Il peut utiliser un annuaire LDAP ou une base de données.
@@ -84,34 +84,34 @@ Pour ce projet, l’intégration SSO/LDAP via YuNoHost est privilégiée car ell
 
 ## 3. Réalisations et livrables
 
-### Documents
+### 3.1. Documents
 
 Nous mettons à disposition plusieurs documents pour aider à comprendre et utiliser notre projet.  
 
 > Les sections 4.1 à 4.3 concernent les documentatiions, qui sont toutes accessibles sur [GitHub Pages](https://albimousse.github.io/sae-raviv-5.A.01/).
 
-#### Document de Conception  
+#### 3.1.1. Document de Conception  
 Destinée aux développeurs et contributeurs techniques. Elle décrit la conception du système, avec des diagrammes UML détaillés et les cas d’utilisation principaux.  
 🔗 Lien : [Document de Conception](https://albimousse.github.io/sae-raviv-5.A.01/docconcept.html)
 
-#### Documentation Technique  
+#### 3.1.2. Documentation Technique  
 Destinée aux développeurs et contributeurs techniques. Elle contient des informations détaillées sur l’architecture, le code et les technologies utilisées.  
 🔗 Lien : [Documentation Technique](https://albimousse.github.io/sae-raviv-5.A.01/doctech.html)
 
-#### Documentation Utilisateur
+#### 3.1.3. Documentation Utilisateur
 Destinée aux utilisateurs finaux. Elle explique comment utiliser le projet et ses fonctionnalités.  
 🔗 Lien : [Documentation Utilisateur](https://albimousse.github.io/sae-raviv-5.A.01/docuser.html)  
 
-#### Cahier de Test
+#### 3.1.4. Cahier de Test
 Ce document détaille les cas de test pour valider les fonctionnalités du projet en fonction des rôles définis (visiteur, client, administrateur). Chaque cas de test comprend les préconditions, actions à réaliser et résultats attendus.  
 🔗 Lien : Cahier de Test
 > *Le cahier de test sera rédigé lorsque la solution définitive aura été choisie.*
 
-#### Chiffrage du projet  
+#### 3.1.5. Chiffrage du projet  
 Ce document détaille le coût du projet en termes de temps de travail pour l'équipe, ainsi que par membre.
 🔗 Lien : [Chiffrage du projet](https://github.com/AlbiMousse/sae-raviv-5.A.01/blob/main/docs/chiffrage/Chiffrage.pdf)
 
-### Tableau des livrables
+### 3.2. Tableau des livrables
 
 | **Date**   | **Nom**         | **Lien**                                     |
 |------------|-----------------|----------------------------------------------|
@@ -121,7 +121,7 @@ Ce document détaille le coût du projet en termes de temps de travail pour l'é
 | Sem.37 / 38 | Template du portail de connexion    | [Template du portail de connexion](https://github.com/AlbiMousse/sae-raviv-5.A.01/blob/main/login-portal-template/login.html)     |
 | | Environnement de travail| [Environnement de travail](https://github.com/AlbiMousse/sae-raviv-5.A.01/blob/main/infra/docker-compose.yml)|
 
-### Releases
+### 3.3. Releases
 La dernière version de notre travail est disponible via le lien ci-dessous.
 
 🔗 Lien : [v0.1](https://github.com/AlbiMousse/sae-raviv-5.A.01/releases/tag/v0.1)
@@ -132,7 +132,7 @@ La dernière version de notre travail est disponible via le lien ci-dessous.
 
 Pour faciliter le suivi, nous avons mis en place plusieurs outils sur GitHub :  
 
-### Board GitHub  
+### 4.1. Board GitHub  
 Le board du projet permet de suivre l’état d’avancement des tâches. Celles-ci sont classés selon trois colonnes :
 
 | 📝 **À faire** | ⏳ **En cours** | ✅ **Terminé** |
@@ -140,12 +140,12 @@ Le board du projet permet de suivre l’état d’avancement des tâches. Celles
 
 🔗 Le Board est consultable ici : [Board](https://github.com/users/AlbiMousse/projects/1)  
 
-### Milestones  
+### 4.2. Milestones  
 Les milestones représentent chaque sprint du projet, avec leurs objectifs, délais et un avancement mesuré en pourcentage. 
 
 🔗 Les milestones sont consultables ici : [Milestones](https://github.com/AlbiMousse/sae-raviv-5.A.01/milestones)  
 
-### Réunions
+### 4.3. Réunions
 
 Cette section regroupe les ordres du jour et compte rendus de chaque réunion réalisée avec le client.
 
@@ -158,7 +158,7 @@ Cette section regroupe les ordres du jour et compte rendus de chaque réunion r�
 
 ## 5. Planning de télétravail
 
-### Légende
+### 5.1. Légende
 
 > **T** = Membre en Télétravail
 
@@ -166,7 +166,7 @@ Cette section regroupe les ordres du jour et compte rendus de chaque réunion r�
 
 > **—** = Jours non travaillés / non consacrés au projet
 
-### Planning
+### 5.2. Planning
 
 > Dans ce planning, ne sont considérées que les séances de travail en autonomie.
 
