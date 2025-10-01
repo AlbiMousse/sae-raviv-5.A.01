@@ -59,6 +59,10 @@ nav#toc button:hover {
   background-color: #f0f0f0;
   border-radius: 4px;
 }
+nav#toc button.active {
+  color: blue;
+}
+
 
 div#page {
   display: flex;
