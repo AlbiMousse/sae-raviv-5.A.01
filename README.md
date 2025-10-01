@@ -218,9 +218,9 @@ Cette section regroupe les ordres du jour et compte rendus de chaque r√©union r√
 |:--------------:|:--------:|:--------:|:--------:|:--------:|:--------:|
 | **MEMBRE**     | 29/09    | 30/09    | 01/10    | 02/10    | 03/10    |
 | | | | | | |
-| TA | T | | | | |
-| AE | T | | | | |
-| JG | T | | | | |
-| VJ | T | | | | |
-| ML | T | | | | |
-| QM | T | | | | |
+| TA | | | T | T | T |
+| AE | | | | | |
+| JG | | | | | |
+| VJ | | | | | |
+| ML | | | T | T | T |
+| QM | | | | | |
