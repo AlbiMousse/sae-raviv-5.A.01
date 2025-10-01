@@ -55,3 +55,23 @@ if (main) {
   const observer = new MutationObserver(() => generateTOC());
   observer.observe(main, { childList: true, subtree: true });
 }
+
+window.addEventListener("scroll", () => {
+  const headers = document.querySelectorAll("main h2, main h3, main h4");
+  let current = null;
+  const offset = 100; // marge pour activer un peu avant
+
+  headers.forEach(h => {
+    const rect = h.getBoundingClientRect();
+    if (rect.top <= offset && rect.bottom > 0) {
+      current = h;
+    }
+  });
+
+  document.querySelectorAll("#toc button").forEach(btn => {
+    btn.classList.remove("active");
+    if (current && btn.onclick.toString().includes(`#${current.id}`)) {
+      btn.classList.add("active");
+    }
+  });
+});
