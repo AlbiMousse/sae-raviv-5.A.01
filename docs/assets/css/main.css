@@ -71,15 +71,9 @@ div#page {
 }
 
 table {
-  display: flex;
-  flex-direction: column;
   width: 100%;
   box-sizing: border-box;
   border-collapse: collapse;
-}
-tr {
-  display: flex;
-  width: 100%;
 }
 th, td {
   border: 1px solid #fff;
