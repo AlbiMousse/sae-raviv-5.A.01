@@ -70,7 +70,7 @@ window.addEventListener("scroll", () => {
 
   document.querySelectorAll("#toc button").forEach(btn => {
     btn.classList.remove("active");
-    if (current && btn.onclick.toString().includes(`#${current.id}`)) {
+    if (current && btn.textContent === current.textContent) {
       btn.classList.add("active");
     }
   });

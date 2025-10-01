@@ -63,7 +63,6 @@ nav#toc button.active {
   color: blue;
 }
 
-
 div#page {
   display: flex;
   flex-direction: column;
