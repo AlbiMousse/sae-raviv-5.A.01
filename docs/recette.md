@@ -8,29 +8,53 @@
 
 ## 1. Prérequis
 
-
-
 ## 2. Cas de tests
 
-### 2.1. Connexion
+### 2.1. Membres
 
-> _Template de cas de test._
+#### 2.1.1. Connexion
 
-| **Cas de test** | Test N°01-01 |
-|:----------------|:-------------|
-| **Intitulé** | |
-| **Objectifs** | |
+| **Cas de test** | Test N°01-01-01 |
+|:----------------|:----------------|
+| **Intitulé** | Connexion au forum Discourse |
+| **Objectif** | Tester la connexion d'un membre au forum Discourse. |
 
 | **ID** | **PAGE** | **PRÉ-CONDITION** | **ACTIONS** | **COMPORTEMENT ATTENDU** | **RÉSULTAT** |
 |:-------|:---------|:------------------|:------------|:-------------------------|-------------:|
 | | | | | | |
 
 > **Commentaire**  
-> [ ... ]
+> 
 
 ---
 
-### 2.2. Déconnexion
+| **Cas de test** | Test N°01-01-02 |
+|:----------------|:----------------|
+| **Intitulé** | Connexion au NAS Synology |
+| **Objectif** | Tester la connexion d'un membre au NAS Synology. |
+
+| **ID** | **PAGE** | **PRÉ-CONDITION** | **ACTIONS** | **COMPORTEMENT ATTENDU** | **RÉSULTAT** |
+|:-------|:---------|:------------------|:------------|:-------------------------|-------------:|
+| | | | | | |
+
+> **Commentaire**  
+> 
+
+---
+
+| **Cas de test** | Test N°01-01-03 |
+|:----------------|:----------------|
+| **Intitulé** | Connexion à l'espace membre du site web RAVIV. |
+| **Objectif** | Tester la connexion d'un membre à son espace privé sur le site web RAVIV. |
+
+| **ID** | **PAGE** | **PRÉ-CONDITION** | **ACTIONS** | **COMPORTEMENT ATTENDU** | **RÉSULTAT** |
+|:-------|:---------|:------------------|:------------|:-------------------------|-------------:|
+| | | | | | |
+
+> **Commentaire**  
+> 
+
+#### 2.1.2. Déconnexion
 
 ---
 
