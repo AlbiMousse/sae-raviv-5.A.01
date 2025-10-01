@@ -1,4 +1,4 @@
-# CAHIER DE RECETTE
+# Cahier de Recette
 
 <img src="assets/img/raviv2.png" alt="RAVIV" width="200px" style="background-color:#fff;">  
 <img src="assets/img/iut-blagnac.jpg" alt="IUT de Blagnac" width="200px">  
