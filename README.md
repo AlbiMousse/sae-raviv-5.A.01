@@ -65,7 +65,12 @@ L'ensemble du travail réalisé est à destination d’**Élodie Ducéré**, not
 
 ### 2.1. Client et contexte
 
-Ce projet consiste en l’unification du système d’authentification des différentes applications : NAS, forum, blog…
+Ce projet consiste en la création d'un système d'authentification permettant d'unifier les différents outils proposés par RAVIV, à savoir :
+- [Le site de l'assotiation](https://getgrav.org)
+- [Un forum Discourse](https://www.discourse.org)
+- [Un NAS Synology](https://www.synology.com/fr-fr)
+
+RAVIV est un réseau coopératif d’acteurs du spectacle vivant qui œuvre à la mutualisation des espaces de travail, du matériel et des ressources afin de soutenir et développer la création artistique locale dans un esprit de solidarité.
 
 ### 2.2. Solution proposée
 Pour le développement de ce CAS, nous avons le choix entre différentes solutions :
@@ -218,9 +223,9 @@ Cette section regroupe les ordres du jour et compte rendus de chaque réunion r�
 |:--------------:|:--------:|:--------:|:--------:|:--------:|:--------:|
 | **MEMBRE**     | 29/09    | 30/09    | 01/10    | 02/10    | 03/10    |
 | | | | | | |
-| TA | | | T | T | T |
+| TA | | | T | | T |
 | AE | | | | | |
 | JG | | | | | |
 | VJ | | | | | |
-| ML | | | T | T | T |
+| ML | | | T | | |
 | QM | | | | | |
