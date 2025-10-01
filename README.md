@@ -107,10 +107,9 @@ Destinée aux développeurs et contributeurs techniques. Elle contient des infor
 Destinée aux utilisateurs finaux. Elle explique comment utiliser le projet et ses fonctionnalités.  
 🔗 Lien : [Documentation Utilisateur](https://albimousse.github.io/sae-raviv-5.A.01/docuser.html)  
 
-#### 3.1.4. Cahier de Test
+#### 3.1.4. Cahier de Recette
 Ce document détaille les cas de test pour valider les fonctionnalités du projet en fonction des rôles définis (visiteur, client, administrateur). Chaque cas de test comprend les préconditions, actions à réaliser et résultats attendus.  
-🔗 Lien : Cahier de Test
-> *Le cahier de test sera rédigé lorsque la solution définitive aura été choisie.*
+🔗 Lien : [Cahier de Recette](https://albimousse.github.io/sae-raviv-5.A.01/recette.html)
 
 #### 3.1.5. Chiffrage du projet  
 Ce document détaille le coût du projet en termes de temps de travail pour l'équipe, ainsi que par membre.
