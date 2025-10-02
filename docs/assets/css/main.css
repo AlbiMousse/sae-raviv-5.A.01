@@ -37,12 +37,17 @@ nav#toc {
   }
 }
 nav#toc ul {
+  display: flex;
   list-style: none;
   padding: 0;
   margin: 0;
+  width: 100%;
+  height: 1.5rem;
 }
 nav#toc li {
+  display: flex;
   margin: 0.2rem 0;
+  width: 100%;
 }
 nav#toc button {
   display: block;
