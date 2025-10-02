@@ -222,7 +222,7 @@ Cette section regroupe les ordres du jour et compte rendus de chaque r√©union r√
 |:--------------:|:--------:|:--------:|:--------:|:--------:|:--------:|
 | **MEMBRE**     | 29/09    | 30/09    | 01/10    | 02/10    | 03/10    |
 | | | | | | |
-| TA | | | T | | T |
+| TA | | | T | T | T |
 | AE | | | | | |
 | JG | | | | | |
 | VJ | | | | | |
