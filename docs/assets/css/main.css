@@ -38,6 +38,7 @@ nav#toc {
 }
 nav#toc ul {
   display: flex;
+  flex-direction: column;
   list-style: none;
   padding: 0;
   margin: 0;
