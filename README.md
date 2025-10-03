@@ -66,7 +66,7 @@ L'ensemble du travail réalisé est à destination d’**Élodie Ducéré**, not
 ### 2.1. Client et contexte
 
 Ce projet consiste en la création d'un système d'authentification permettant d'unifier les différents outils proposés par RAVIV, à savoir :
-- [Le site de l'assotiation](https://getgrav.org)
+- [Le site de l'association](https://getgrav.org)
 - [Un forum Discourse](https://www.discourse.org)
 - [Un NAS Synology](https://www.synology.com/fr-fr)
 
@@ -223,8 +223,8 @@ Cette section regroupe les ordres du jour et compte rendus de chaque réunion r�
 | **MEMBRE**     | 29/09    | 30/09    | 01/10    | 02/10    | 03/10    |
 | | | | | | |
 | TA | | | T | T | T |
-| AE | | | | | |
-| JG | | | | | |
+| AE | | | | | T |
+| JG | | | | | T |
 | VJ | | | | | |
-| ML | | | T | | |
+| ML | | | T | | T |
 | QM | | | | | |
