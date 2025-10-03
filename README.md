@@ -127,9 +127,10 @@ Ce document détaille le coût du projet en termes de temps de travail pour l'é
 
 ### 3.3. Releases
 
-| **DERNIÈRE VERSION** | **Publiée le 03/10/2025** | [**v0.2**](https://github.com/AlbiMousse/sae-raviv-5.A.01/releases/tag/v0.2) |
+| **DERNIÈRE VERSION** | Publiée le 03/10/2025 | [v0.2](https://github.com/AlbiMousse/sae-raviv-5.A.01/releases/tag/v0.2) |
 |----------------------|------------|--------------------------------------------------------------------------|
-| ANCIENNE VERSION | Publiée le 19/09/2025 | [v0.1](https://github.com/AlbiMousse/sae-raviv-5.A.01/releases/tag/v0.1) |
+| | | |
+| *ANCIENNE VERSION* | *Publiée le 19/09/2025* | [*v0.1*](https://github.com/AlbiMousse/sae-raviv-5.A.01/releases/tag/v0.1) |
 
 ---
 
