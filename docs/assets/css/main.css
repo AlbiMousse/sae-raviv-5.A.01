@@ -86,9 +86,15 @@ table {
   box-sizing: border-box;
   border-collapse: collapse;
 }
-th, td {
+table th, table td {
   border: 1px solid #fff;
   padding: 10px;
+}
+table tr:nth-child(even) {
+  background-color: #2a2a2a;
+}
+table tr:nth-child(odd) {
+  background-color: #1b1b1b;
 }
 
 blockquote {
