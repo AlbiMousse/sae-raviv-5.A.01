@@ -230,3 +230,14 @@ Cette section regroupe les ordres du jour et compte rendus de chaque r√©union r√
 | VJ | | | | | |
 | ML | | | T | | T |
 | QM | | | | | |
+
+| **SEMAINE 41** | **LUN.** | **MAR.** | **MER.** | **JEU.** | **VEN.** |
+|:--------------:|:--------:|:--------:|:--------:|:--------:|:--------:|
+| **MEMBRE**     | 06/10    | 07/10    | 08/10    | 09/10    | 10/10    |
+| | | | | | |
+| TA | T | | | T | |
+| AE | T | | | | |
+| JG | T | | | | |
+| VJ | T | | | | |
+| ML | T | | | T | |
+| QM | T | | | | |
