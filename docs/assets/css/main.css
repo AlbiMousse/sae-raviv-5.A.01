@@ -1,7 +1,7 @@
 /* fonts */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600;700&display=swap');
 
-body {
+html, body {
   display: flex;
   padding: 0rem;
   margin: 0rem;
