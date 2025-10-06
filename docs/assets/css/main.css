@@ -77,7 +77,7 @@ div#page {
   flex: 1;
   width: 100%;
   box-sizing: border-box;
-  padding: 3rem, 3rem 1rem 3rem;
+  padding: 3rem 3rem 1rem 3rem;
   overflow-x: hidden;
 }
 
