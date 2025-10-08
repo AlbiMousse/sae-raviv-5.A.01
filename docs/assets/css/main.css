@@ -19,6 +19,12 @@ html, body {
   -webkit-font-smoothing: antialiased;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
 /* table of content */
 /* ---------------- */
 
