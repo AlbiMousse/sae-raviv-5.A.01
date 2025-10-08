@@ -1,6 +1,6 @@
 # Configuration d'un container Discourse
 
-## Procédure d'installation
+## 1. Procédure d'installation
 
 1. Dans le répertoire où a été clôné notre dépôt (`sae-raviv-5.A.01`), clôner le dépôt GitHub officiel `discourse_docker` :
 ```bash
@@ -33,9 +33,11 @@ cp ../sae-raviv-5.A.01/infra/discourse/config/app.yml containers/app.yml
 ./launcher start app
 ```
 
-## Problèmes connus
+## 2. Problèmes connus
 
-### Erreur de "storage driver"
+### 2.1. Erreur de "storage driver"
+
+#### 2.1.1 Description du problème
 
 Lors de la construction du forum discourse (Étape 5 de la procédure d'installation), l'erreur suivante peut être obtenue :
 
@@ -49,7 +51,7 @@ Cela signifie que Docker utilise un driver différent de `overlay2` (`overlayfs`
 
 Si le driver utilisé est `overlayfs`, suivre la solution 1.
 
-**Solution 1 : Autoriser le driver `overlayfs`**
+#### 2.1.2. Solution : Autoriser le driver `overlayfs`
 
 1. Ouvrir le fichier `./launcher`.
 
@@ -84,4 +86,57 @@ fi
 4. Relancer la construction du forum Discourse :
 ```bash
 ./launcher bootstrap app
+```
+
+### 2.2. Erreur au moment du Rebuild
+
+#### 2.2.1. Description du problème
+
+Au moment de l'utilisation de la commande `./launcher rebuild app`, l'erreur suivante peut être obtenue :
+
+```bash
+erreur : Vos modifications locales aux fichiers suivants seraient écrasées par la fusion : launcher Veuillez valider ou remiser vos modifications avant la fusion.
+Abandon
+failed to update
+```
+
+Avant d'effectuer un rebuild, le fichier `launcher` se met à jour depuis GitHub. Cependant, Git empêchera la mise à jour si le fichier a été modifié (par exemple pour contourner l'[Erreur de "storage driver"](#21-erreur-de-storage-driver)).
+
+#### 2.2.2. Solution
+
+1. Repérer les fichiers que Git considère comme ayant été modifiés :
+
+```bash
+git status
+```
+
+2. Sauvegarder les modifications locales :
+
+```bash
+git stash push -m "saving updated launcher"
+```
+
+3. Mettre à jour le dépôt :
+
+```bash
+git pull
+```
+
+4. Réappliquer les modifications locales :
+
+```bash
+git stash pop
+```
+
+5. Valider les modifications locales :
+
+```bash
+git add launcher
+git commit -m "manual merger of launcher"
+```
+
+6. Lancer le rebuild :
+
+```bash
+./launcher rebuild app
 ```
