@@ -237,7 +237,7 @@ Cette section regroupe les ordres du jour et compte rendus de chaque r√©union r√
 | | | | | | |
 | TA | T | T | T | T | T |
 | AE | T | | | | |
-| JG | T | | | | |
+| JG | | | | | |
 | VJ | T | | | | |
 | ML | T | | T | T | |
 | QM | T | | | | |
