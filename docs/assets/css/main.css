@@ -22,7 +22,7 @@ html, body {
 /* table of content */
 /* ---------------- */
 
-nav#toc {
+nav#pages {
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
@@ -33,11 +33,11 @@ nav#toc {
   background-color: #161618;
 }
 @media screen and (max-width: 800px) {
-  nav#toc {
+  nav#pages {
     display: none;
   }
 }
-nav#toc ul {
+nav#pages ul {
   display: flex;
   flex-direction: column;
   list-style: none;
@@ -45,14 +45,14 @@ nav#toc ul {
   margin: 0;
   width: 100%;
 }
-nav#toc li {
+nav#pages li {
   display: flex;
   flex-direction: column;
   margin: 0.2rem 0;
   width: 100%;
   min-height: 1.5rem;
 }
-nav#toc button {
+nav#pages button {
   display: block;
   width: 100%;
   text-align: left;
@@ -63,11 +63,11 @@ nav#toc button {
   color: #fff;
   font-size: 0.95rem;
 }
-nav#toc button:hover {
+nav#pages button:hover {
   background-color: #f0f0f0;
   border-radius: 4px;
 }
-nav#toc button.active {
+nav#pages button.active {
   color: blue;
 }
 
@@ -112,12 +112,4 @@ img {
   max-width: 100%;
   height: auto;
   display: block;
-}
-
-/* list of figures */
-/* --------------- */
-
-div#lof {
-  display: flex;
-  flex-direction: column;
 }
