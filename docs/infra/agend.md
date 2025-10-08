@@ -1,5 +1,7 @@
 # Configuration d'un container Discourse
 
+> **Auteur :** Victor Jockin
+
 ## Sommaire
 [1. Procédures d'installation](#1-procédure-dinstallation)  
 [2. Problèmes connus](#2-problèmes-connus)  
@@ -150,3 +152,10 @@ git commit -m "manual merger of launcher"
 ```bash
 ./launcher rebuild app
 ```
+
+---
+
+BUT Informatique, 3ème Année
+
+IUT de Blagnac,
+Université Toulouse II - Jean Jaurès
