@@ -20,9 +20,6 @@ title: "Documentation Utilisateur"
 |:-----------------------------------------:|
 | Figure 2.1 - Use Case Général |
 
-## Table des illustrations
-% lof %
-
 ---
 
 **Auteurs**  

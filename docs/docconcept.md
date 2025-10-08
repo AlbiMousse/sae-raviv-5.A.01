@@ -1,8 +1,4 @@
----
-layout: default
-title: "Documentation de Conception"
----
-# DOCUMENT DE CONCEPTION
+# Document de conception
 
 <img src="assets/img/raviv2.png" alt="RAVIV" width="200px" style="background-color:#fff;">
 
@@ -12,10 +8,20 @@ title: "Documentation de Conception"
 
 ---
 
+## Sommaire
+[1. Architecture générale](#1-architecture-générale)
+[2. Conception](#2-conception)
+&emsp;[2.1. Présentation de la soluation](#21-présentation-de-la-solution)
+&emsp;&emsp;[2.1.1. Maquettes](#211-maquettes)
+&emsp;[2.2. Réalisation de la solution](#22-réalisation-de-la-solution)
+[3. Contraintes techniques](#3-contraintes-techniques)
+
+---
+
 ## 1. Architecture générale
 ## 2. Conception
 ### 2.1 Présentation de la solution
-#### Maquettes
+#### 2.1.1. Maquettes
 
 | ![Figure 2.1.1 - Maquette du portail de connexion aux services RAVIV](assets/img/mockups/mockup-CAS.png) |
 |:-:|
@@ -23,8 +29,6 @@ title: "Documentation de Conception"
 
 ### 2.2 Réalisation de la solution
 ## 3. Contraintes techniques
-## Table des illustrations
-% lof %
 
 ---
 
