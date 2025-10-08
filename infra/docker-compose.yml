@@ -10,6 +10,33 @@ services:
       - ./cas/config:/etc/cas/config
       - ./cas/thekeystore:/etc/cas/thekeystore
     restart: unless-stopped
+  ldap:
+    image: bitnamilegacy/openldap:latest
+    container_name: openldap
+    environment:
+      - LDAP_ROOT=dc=raviv,dc=local
+      - LDAP_ADMIN_USERNAME=admin
+      - LDAP_ADMIN_PASSWORD=adminpassword
+      - LDAP_ALLOW_ANON_BINDING=yes
+      - LDAP_SKIP_DEFAULT_TREE=no
+      - LDAP_ENABLE_TLS=no
+      - LDAP_PORT_NUMBER=389
+    ports:
+      - "389:389"
+      - "636:636"
+    volumes:
+      - ldap_data:/bitnami/openldap/data
+      - ldap_config:/bitnami/openldap/slapd.d
+  phpldapadmin:
+    image: osixia/phpldapadmin:stable
+    container_name: phpldapadmin
+    environment:
+      - PHPLDAPADMIN_LDAP_HOSTS=ldap
+      - PHPLDAPADMIN_HTTPS=false
+    ports:
+      - "8083:80"
+    depends_on:
+      - ldap
 
   grav:
     image: lscr.io/linuxserver/grav:latest
@@ -45,4 +72,6 @@ services:
     restart: unless-stopped
 
 volumes:
+  ldap_data:
+  ldap_config:
   nextcloud_data:
