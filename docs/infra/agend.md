@@ -157,5 +157,5 @@ git commit -m "manual merger of launcher"
 
 BUT Informatique, 3ème Année
 
-IUT de Blagnac,
+IUT de Blagnac,  
 Université Toulouse II - Jean Jaurès
