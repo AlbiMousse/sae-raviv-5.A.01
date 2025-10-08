@@ -1,5 +1,15 @@
 # Configuration d'un container Discourse
 
+## Sommaire
+[1. Procédures d'installation](#1-procédure-dinstallation)  
+[2. Problèmes connus](#2-problèmes-connus)  
+&emsp;[2.1. Erreur de "storage driver"](#21-erreur-de-storage-driver)  
+&emsp;&emsp;[2.1.1. Description du problème](#211-description-du-problème)  
+&emsp;&emsp;[2.1.2. Solution : Autoriser le driver `overlayfs`](#212-solution--autoriser-le-driver-overlayfs)  
+&emsp;[2.2. Erreur au moment du Rebuild](#22-erreur-au-moment-du-rebuild)  
+&emsp;&emsp;[2.2.1. Description du problème](#221-description-du-problème)  
+&emsp;&emsp;[2.2.2. Solution](#222-solution)
+
 ## 1. Procédure d'installation
 
 1. Dans le répertoire où a été clôné notre dépôt (`sae-raviv-5.A.01`), clôner le dépôt GitHub officiel `discourse_docker` :
