@@ -67,6 +67,7 @@ services:
       #- CAS_SERVICE_URL=http://localhost:8081
       #- CAS_AUTOCREATE_USER=1
     volumes:
+      - ./nextcloud/apps/user_cas:/var/www/html/apps/user_cas
       - nextcloud_data:/var/www/html
       #- ./nextcloud-apps:/var/www/html/apps
       #- ./nextcloud-config:/var/www/html/config
