@@ -1,4 +1,5 @@
 services:
+  # CAS server simulation
   cas-server:
     image: apereo/cas:latest
     container_name: cas-server
@@ -38,6 +39,7 @@ services:
     depends_on:
       - ldap
 
+  # RAVIV website simulation
   grav:
     image: lscr.io/linuxserver/grav:latest
     container_name: grav
@@ -51,6 +53,7 @@ services:
       - "8080:80"
     restart: unless-stopped
 
+  # Synology NAS simulation
   nextcloud:
     image: nextcloud:26-apache
     container_name: nextcloud
