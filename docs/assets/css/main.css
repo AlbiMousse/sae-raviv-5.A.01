@@ -78,6 +78,11 @@ nav#pages button.active {
   color: blue;
 }
 
+nav#pages .menu-section {
+  display: flex;
+  flex-direction: column;
+}
+
 div#page {
   display: flex;
   flex-direction: column;
