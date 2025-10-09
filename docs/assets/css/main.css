@@ -129,7 +129,7 @@ nav#pages a {
   width: 100%;
   height: 2rem;
   color: #9898a0;
-  font-weight: normal;
+  font-weight: 600;
   text-decoration: none;
 }
 nav#pages a:hover {
