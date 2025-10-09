@@ -71,7 +71,6 @@ img {
 nav#pages {
   display: flex;
   flex-direction: column;
-  justify-content: left;
   box-sizing: border-box;
   padding: 1.5rem;
   margin: 0rem;
@@ -135,7 +134,7 @@ nav#pages .menu-section span.link {
 }
 nav#pages a {
   display: flex;
-  width: fit-content;
+  width: 100%;
   height: 100%;
   color: #9898a0;
   font-weight: 500;
