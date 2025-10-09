@@ -115,15 +115,21 @@ nav#pages button:hover {
 nav#pages button.active {
   color: blue;
 }
+
 nav#pages .menu-section {
   display: flex;
   flex-direction: column;
+}
+nav#pages .menu-section span.title {
+  color: #dfdfd6;
+  font-weight: bold;
 }
 nav#pages a {
   display: flex;
   width: 100%;
   height: 2rem;
-  color: #545459;
+  color: #9898a0;
+  font-weight: normal;
   text-decoration: none;
 }
 nav#pages a:hover {
