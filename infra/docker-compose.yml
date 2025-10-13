@@ -9,6 +9,7 @@ services:
       - CAS_SERVER_NAME=https://localhost:8082
     volumes:
       - ./cas/config:/etc/cas/config
+      - ./cas/services:/tmp/cas
       - ./cas/thekeystore:/etc/cas/thekeystore
     restart: unless-stopped
   ldap:
@@ -68,7 +69,7 @@ services:
       #- CAS_AUTOCREATE_USER=1
     volumes:
       - nextcloud_data:/var/www/html
-      #- ./nextcloud/custom_apps:/var/www/html/custom_apps
+      - ./nextcloud/custom_apps/user_cas:/var/www/html/apps/user_cas
       #- ./nextcloud-apps:/var/www/html/apps
       #- ./nextcloud-config:/var/www/html/config
     ports:
