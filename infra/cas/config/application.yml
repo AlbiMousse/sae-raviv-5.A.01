@@ -1,0 +1,15 @@
+cas:
+  authn:
+    accept:
+      enabled: false
+    ldap:
+      - name: "LDAP"
+        ldap-url: ldap://ldap:389
+        base-dn: ou=users,dc=raviv,dc=local
+        bind-dn: cn=admin,dc=raviv,dc=local
+        bind-credential: adminpassword
+        search-filter: (uid={user})
+        type: AUTHENTICATED
+        principal-attribute-id: uid
+        password-encoder:
+          type: NONE

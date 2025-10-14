@@ -1,7 +1,7 @@
 services:
   # CAS server simulation
   cas-server:
-    image: apereo/cas:7.1.2
+    image: cas-ldap
     container_name: cas-server
     ports:
       - "8443:8443"
@@ -29,6 +29,7 @@ services:
     volumes:
       - ldap_data:/bitnami/openldap/data
       - ldap_config:/bitnami/openldap/slapd.d
+    
   phpldapadmin:
     image: osixia/phpldapadmin:stable
     container_name: phpldapadmin
