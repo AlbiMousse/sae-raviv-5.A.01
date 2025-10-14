@@ -6,6 +6,15 @@
 
 ---
 
+## Sommaire
+[1. Prérequis](#1-prérequis)
+[2. Cas de tests](#2-cas-de-tests)
+&emsp;[2.1. Membres](#21-membres)
+&emsp;[2.1.1. Connexion](#211-connexion)
+&emsp;[2.1.2. Déconnexion](#212-déconnexion)
+
+---
+
 ## 1. Prérequis
 
 ## 2. Cas de tests
