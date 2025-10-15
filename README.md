@@ -244,7 +244,7 @@ Cette section regroupe les ordres du jour et compte rendus de chaque r√©union r√
 
 | **SEMAINE 41** | **LUN.** | **MAR.** | **MER.** | **JEU.** | **VEN.** |
 |:--------------:|:--------:|:--------:|:--------:|:--------:|:--------:|
-| **MEMBRE**     | 06/10    | 07/10    | 08/10    | 09/10    | 10/10    |
+| **MEMBRE**     | 13/10    | 14/10    | 15/10    | 16/10    | 17/10    |
 | | | | | | |
 | TA | T | T | A | A | |
 | AE | | | | | |
