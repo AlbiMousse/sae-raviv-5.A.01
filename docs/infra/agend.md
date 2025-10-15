@@ -45,6 +45,13 @@ cp ../sae-raviv-5.A.01/infra/discourse/config/app.yml containers/app.yml
 ./launcher start app
 ```
 
+### Lancer de MailHog
+
+Pour accéder à la boîte virtuelle MailHog, utiliser la commande suivante :
+```bash
+docker run -d -p 8025:8025 -p 1025:1025 mailhog/mailhog
+```
+
 ## 2. Problèmes connus
 
 ### 2.1. Erreur de "storage driver"
