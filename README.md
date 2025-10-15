@@ -246,7 +246,7 @@ Cette section regroupe les ordres du jour et compte rendus de chaque r√©union r√
 |:--------------:|:--------:|:--------:|:--------:|:--------:|:--------:|
 | **MEMBRE**     | 13/10    | 14/10    | 15/10    | 16/10    | 17/10    |
 | | | | | | |
-| TA | T | T | A | A | |
+| TA | T | | A | A | |
 | AE | | | | | |
 | JG | | | | | |
 | VJ | | | | | |
