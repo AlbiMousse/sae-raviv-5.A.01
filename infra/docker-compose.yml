@@ -6,7 +6,7 @@ services:
     ports:
       - "8443:8443"
     environment:
-      - CAS_SERVER_NAME=https://localhost:8082
+      - CAS_SERVER_NAME=https://localhost:8443
     volumes:
       - ./cas/config:/etc/cas/config
       - ./cas/services:/tmp/cas
