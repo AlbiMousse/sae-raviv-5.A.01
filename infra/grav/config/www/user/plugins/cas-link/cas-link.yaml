@@ -1,0 +1,3 @@
+enabled: true
+cas_server: 'https://localhost:8443/cas'
+text_var: Custom Text added by the **Cas Link** plugin (disable plugin to remove)

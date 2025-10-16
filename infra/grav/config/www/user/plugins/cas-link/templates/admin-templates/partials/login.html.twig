@@ -1,0 +1,43 @@
+{% extends 'partials/base.html.twig' %}
+{% set scope = form.scope %}
+{% set field_layout = 'admin' %}
+
+{% block messages %}{% endblock %}
+
+{% block body %}
+<body id="admin-login-wrapper">
+    <section id="admin-login" class="login-box-shadow {{ classes }}">
+
+        {% include 'partials/login-logo.html.twig' %}
+
+        {% include 'partials/messages.html.twig' %}
+
+        {% block instructions %}{% endblock %}
+
+        {% block integration %}{% endblock %}
+
+        {# --- CAS LOGIN BUTTON --- #}
+        {% if cas_login_url %}
+        <div class="cas-login-wrapper" style="margin-bottom: 1em; text-align: center;">
+            <a href="{{ cas_login_url }}" class="button button-primary" style="width: 100%;">
+                <i class="fa fa-university"></i> Login with CAS
+            </a>
+        </div>
+        {% endif %}
+        {# --- END CAS LOGIN BUTTON --- #}
+
+        <form method="post" action="">
+            <div class="padding">
+                {% block form %}{% endblock %}
+                {{ nonce_field(form.getNonceAction(), form.getNonceName())|raw }}
+            </div>
+        </form>
+
+        <script>
+            $(document).ready( function() {
+                $('#messages').delay(5000).animate({ height: 'toggle', opacity: 'toggle' }, 'slow');
+            });
+        </script>
+    </section>
+</body>
+{% endblock %}

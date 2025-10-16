@@ -6,7 +6,7 @@ services:
     ports:
       - "8443:8443"
     environment:
-      - CAS_SERVER_NAME=https://localhost:8082
+      - CAS_SERVER_NAME=https://localhost:8443
     volumes:
       - ./cas/config:/etc/cas/config
       - ./cas/services:/tmp/cas
@@ -70,7 +70,6 @@ services:
       #- CAS_AUTOCREATE_USER=1
     volumes:
       - nextcloud_data:/var/www/html
-      - ./nextcloud/custom_apps/user_cas:/var/www/html/apps/user_cas
       #- ./nextcloud-apps:/var/www/html/apps
       #- ./nextcloud-config:/var/www/html/config
     ports:
