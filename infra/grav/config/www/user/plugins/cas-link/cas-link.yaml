@@ -1,3 +1,5 @@
 enabled: true
 cas_server: 'https://localhost:8443/cas'
+cas_validation_server: "https://cas-server:8443"
+serviceUrl: 'http://localhost:8080/admin'
 text_var: Custom Text added by the **Cas Link** plugin (disable plugin to remove)
