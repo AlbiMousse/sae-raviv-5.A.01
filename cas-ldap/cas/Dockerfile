@@ -8,12 +8,14 @@ ARG EXT_BUILD_OPTIONS=""
 WORKDIR /cas-overlay
 COPY ./src src/
 COPY ./gradle/ gradle/
-COPY ./gradlew ./settings.gradle ./build.gradle ./gradle.properties ./lombok.config ./
+COPY ./gradlew ./gradlew.bat ./settings.gradle ./build.gradle ./gradle.properties ./lombok.config ./
 
 RUN mkdir -p ~/.gradle \
     && echo "org.gradle.daemon=false" >> ~/.gradle/gradle.properties \
     && echo "org.gradle.configureondemand=true" >> ~/.gradle/gradle.properties \
-    && chmod 750 ./gradlew \
+    && sed -i 's/\r$//' ./gradlew \
+    && chmod +x ./gradlew \
+    && ls -la ./gradlew \
     && ./gradlew --version;
 
 RUN ./gradlew clean build $EXT_BUILD_COMMANDS --parallel --no-daemon -Pexecutable=false $EXT_BUILD_OPTIONS;
