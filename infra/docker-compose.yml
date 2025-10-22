@@ -65,13 +65,9 @@ services:
       - NEXTCLOUD_ADMIN_PASSWORD=password123
       - NEXTCLOUD_TRUSTED_DOMAINS=localhost
       - APACHE_DISABLE_REWRITE_IP=1
-      #- CAS_SERVER_URL=http://localhost:8082/cas
-      #- CAS_SERVICE_URL=http://localhost:8081
-      #- CAS_AUTOCREATE_USER=1
     volumes:
       - nextcloud_data:/var/www/html
-      #- ./nextcloud-apps:/var/www/html/apps
-      #- ./nextcloud-config:/var/www/html/config
+      - ./nextcloud/custom_apps/user_cas:/var/www/html/custom_apps/user_cas
     ports:
       - "8081:80"
     restart: unless-stopped
