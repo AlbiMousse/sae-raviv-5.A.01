@@ -1,7 +1,7 @@
 CHANGELOG
 =========
 
-Version 1.10.0
+Version 1.10.1
 --------------
 
 * Add compatibility for owncloud 10.10 and up to Nextcloud 24 with PHP 8.0

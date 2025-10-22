@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorate="~{layout}">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+
+    <title th:text="#{cas.inwebo.selectauthent.title}">Select authentication</title>
+    <link href="../../static/css/cas.css" rel="stylesheet" th:remove="tag" />
+</head>
+
+<body>
+<main class="container mt-3 mb-3">
+    <div layout:fragment="content" class="banner banner-message mdc-card card p-4 m-auto w-lg-66">
+        <h2 th:utext="#{cas.inwebo.selectauthent.heading}">Select your authentication method:</h2>
+
+        <form method="POST" id="startBrowserForm">
+            <input type="hidden" name="_eventId" th:value="${browserAuthenticator}" />
+            <input type="hidden" name="execution" th:value="${flowExecutionKey}" />
+            <div th:replace="~{fragments/submitbutton :: submitButton (messageKey='cas.inwebo.selectauthnt.browser', id='browser', name='browser')}"/>
+        </form>
+        <br />
+        <form method="POST" id="startPushForm">
+            <input type="hidden" name="_eventId" value="push" />
+            <input type="hidden" name="execution" th:value="${flowExecutionKey}" />
+            <div th:replace="~{fragments/submitbutton :: submitButton (messageKey='cas.inwebo.selectauthnt.push', id='push', name='push')}"/>
+        </form>
+    </div>
+</main>
+</body>
+</html>

@@ -293,8 +293,10 @@ class AppService
                 \phpCAS::setVerbose(FALSE);
 
                 if (!empty($this->casDebugFile)) {
+                #if (true){
 
                     \phpCAS::setDebug($this->casDebugFile);
+                    # \phpCas::setDebug("/var/log/phpcas.log");
                     \phpCAS::setVerbose(TRUE);
                 }
 
@@ -306,6 +308,7 @@ class AppService
                 } else {
 
                     \phpCAS::client($this->casVersion, $this->casHostname, intval($this->casPort), $this->casPath);
+                    \phpCAS::setServerServiceValidateURL("https://cas-server:8443/cas/serviceValidate");
                 }
 
                 # Handle SingleSignout requests
@@ -393,13 +396,13 @@ class AppService
 
                     if ($this->getCasVersion() === "1.0") {
 
-                        $newUrl = $newProtocol . $this->getCasHostname() . $this->getCasPath() . '/validate';
+                        $newUrl = $newProtocol . 'cas-server:8443' . $this->getCasPath() . '/validate';
                     } else if ($this->getCasVersion() === "2.0") {
 
-                        $newUrl = $newProtocol . $this->getCasHostname() . $this->getCasPath() . '/serviceValidate';
+                        $newUrl = $newProtocol . 'cas-server:8443' . $this->getCasPath() . '/serviceValidate';
                     } else if ($this->getCasVersion() === "3.0") {
 
-                        $newUrl = $newProtocol . $this->getCasHostname() . $this->getCasPath() . '/p3/serviceValidate';
+                        $newUrl = $newProtocol . 'cas-server:8443' . $this->getCasPath() . '/p3/serviceValidate';
                     } else if ($this->getCasVersion() === "S1") {
 
                         $newSamlUrl = $newProtocol . $this->getCasHostname() . $this->getCasPath() . '/samlValidate';
@@ -452,7 +455,7 @@ class AppService
                     # Set the new URLs
                     if ($this->getCasVersion() !== "S1" && !empty($newUrl)) {
 
-                        \phpCAS::setServerServiceValidateURL($newUrl);
+                        \phpCAS::setServerServiceValidateURL($this->buildQueryUrl('https://cas-server:8443/cas/serviceValidate', 'service=' . urlencode($this->casServiceUrl)));
                         $this->loggingService->write(\OCA\UserCas\Service\LoggingService::DEBUG, "phpCAS ECAS additional attributes have been successfully set. New CAS " . $this->getCasVersion() . " service validate URL: " . $newUrl);
 
                     } elseif ($this->getCasVersion() === "S1" && !empty($newSamlUrl)) {
