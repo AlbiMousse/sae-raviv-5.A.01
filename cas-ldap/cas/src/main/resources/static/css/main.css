@@ -7,27 +7,42 @@
   --color-dark-grey: #877e7e;
 }
 
+/* ============================================ */
+/* BASE */
+/* ============================================ */
+
 body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-sizing: border-box;
-  width: 100vw;
-  height: 100vh;
-  margin: 0rem;
-  padding: 0rem 3rem;
-  background-color: #070D2B;
-  font-family: var(--main-font);
-  font-size: 14px;
+  background-color: #070D2B !important;
+  font-family: var(--main-font) !important;
+  font-size: 14px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  min-height: 100vh !important;
 }
 
-main {
-  display: flex;
-  width: 850px;
-  height: 500px;
-  border-radius: 0.3rem;
-  overflow: hidden;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.35);
+/* Container centré */
+.container {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  width: 100% !important;
+  max-width: none !important;
+  padding: 2rem !important;
+}
+
+/* Carte (form + bigImage) */
+.card {
+  display: flex !important;
+  flex-direction: row !important;
+  width: 900px !important;
+  height: 550px !important;
+  border-radius: 0.3rem !important;
+  overflow: hidden !important;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.35) !important;
+  background: transparent !important;
 }
 
 #ravivLogo {
@@ -128,13 +143,13 @@ button:hover {
   font-size: 12px;
 }
 
+/* BigImage à droite */
 #bigImage {
-  display: flex;
-  width: 100%;
-  background-image: url("../images/img/big-image.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  flex: 1 !important;
+  background-image: url('../images/big-image.png') !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
 }
 
 @media screen and (max-width: 800px) {
@@ -166,4 +181,307 @@ button:hover {
   #formContent {
     margin: auto 0;
   }
+}
+
+/* ============================================ */
+/* FORMULAIRE */
+/* ============================================ */
+
+/* Section formulaire blanche */
+.login-section.login-form,
+section#loginForm {
+  background-color: #fff !important;
+  width: 350px !important;
+  flex-shrink: 0 !important;
+  padding: 2rem 2.5rem !important;
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+/* Logo RAVIV en haut du form */
+.form-wrapper::before {
+  content: "";
+  display: block;
+  width: 160px;
+  height: 60px;
+  margin: 0 auto 1.5rem;
+  background-image: url('../images/raviv.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Wrapper du formulaire */
+.form-wrapper {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 1rem !important;
+  width: 100% !important;
+}
+
+/* Formulaire principal */
+#fm1 {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 1rem !important;
+  width: 100% !important;
+  margin: 0 !important;
+}
+
+/* Titre "Connexion" */
+#fm1 h2 {
+  font-size: 16px !important;
+  font-weight: bold !important;
+  text-align: center !important;
+  margin: 0 0 1rem 0 !important;
+  color: #000 !important;
+}
+
+/* ============================================ */
+/* CHAMPS DE FORMULAIRE */
+/* ============================================ */
+
+/* Sections username/password */
+.cas-field,
+section.cas-field {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 0.4rem !important;
+  width: 100% !important;
+  margin: 0 0 1rem 0 !important;
+  position: relative !important;
+  z-index: 1 !important;
+}
+
+/* Container input + toggle button */
+.mdc-input-group-field {
+  position: relative !important;
+  width: 100% !important;
+  z-index: 1 !important;
+}
+
+/* Labels AU-DESSUS des champs */
+.mdc-floating-label,
+label span.mdc-floating-label {
+  position: static !important;
+  transform: none !important;
+  font-size: 14px !important;
+  color: #000 !important;
+  font-family: var(--main-font) !important;
+  margin-bottom: 0.5rem !important;
+  display: block !important;
+  font-weight: 600 !important;
+  text-align: left !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+label {
+  position: static !important;
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+/* Label avec input password */
+.mdc-input-group-field label.mdc-text-field,
+label.mdc-text-field.caps-check {
+  position: relative !important;
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+/* Masquer les décorations Material Design mais GARDER les labels visibles */
+.mdc-notched-outline__leading,
+.mdc-notched-outline__trailing {
+  display: none !important;
+}
+
+.mdc-notched-outline {
+  border: none !important;
+  background: transparent !important;
+  position: static !important;
+  width: 100% !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.mdc-notched-outline__notch {
+  border: none !important;
+  background: transparent !important;
+  position: static !important;
+  width: 100% !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  display: block !important;
+}
+
+/* Conteneur du champ texte */
+.mdc-text-field {
+  width: 100% !important;
+  height: auto !important;
+  padding: 0 !important;
+  background: transparent !important;
+  border: none !important;
+  position: static !important;
+  display: block !important;
+  margin: 0 !important;
+}
+
+/* INPUTS TEXTE - BIEN VISIBLES */
+.mdc-text-field__input,
+input[type="text"],
+input[type="password"],
+input.form-control,
+input.pwd {
+  display: block !important;
+  width: 100% !important;
+  padding: 0.7rem !important;
+  border: 1.5px solid #d0d0d0 !important;
+  border-radius: 0.25rem !important;
+  font-family: var(--main-font) !important;
+  font-size: 14px !important;
+  background-color: #fafafa !important;
+  color: #000000 !important;
+  box-sizing: border-box !important;
+  cursor: text !important;
+  line-height: 1.5 !important;
+  transition: all 0.2s ease !important;
+  position: relative !important;
+  z-index: 1 !important;
+  margin: 0 !important;
+}
+
+input[type="text"]:hover,
+input[type="password"]:hover {
+  background-color: #fff !important;
+  border-color: #b0b0b0 !important;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+.mdc-text-field__input:focus {
+  outline: none !important;
+  border-color: #e7287f !important;
+  background-color: #fff !important;
+  box-shadow: 0 0 0 3px rgba(231, 40, 127, 0.1) !important;
+  z-index: 1 !important;
+}
+
+/* Checkbox "Se souvenir de moi" */
+.form-check,
+.mdc-form-field {
+  display: flex !important;
+  gap: 0.5rem !important;
+  align-items: center !important;
+  margin: 0.5rem 0 !important;
+  z-index: 1 !important;
+}
+
+input[type="checkbox"] {
+  margin: 0 !important;
+  width: auto !important;
+  padding: 0 !important;
+  cursor: pointer !important;
+  pointer-events: auto !important;
+  z-index: 10 !important;
+}
+
+/* BOUTON SUBMIT */
+button[type="submit"],
+input[type="submit"],
+.mdc-button--raised,
+button.btn-primary {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  width: 100% !important;
+  min-height: 2.8rem !important;
+  border: none !important;
+  border-radius: 0.15rem !important;
+  background-color: #e7287f !important;
+  color: #fff !important;
+  font-family: var(--main-font) !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  transition: background-color 0.3s ease !important;
+  padding: 0.7rem 1rem !important;
+  cursor: pointer !important;
+  box-shadow: none !important;
+  margin-top: 0.5rem !important;
+  z-index: 10 !important;
+  pointer-events: auto !important;
+}
+
+button[type="submit"]:hover,
+input[type="submit"]:hover,
+.mdc-button--raised:hover {
+  background-color: #f178af !important;
+}
+
+/* Hide CAS error banners or style minimally */
+.banner-danger {
+  background-color: #ffe0e0;
+  border: 1px solid #ff0000;
+  padding: 0.5rem;
+  border-radius: 0.15rem;
+  font-size: 13px;
+}
+
+/* Hide unnecessary CAS UI elements */
+.login-section.d-xs-none,
+#loginSidePanel,
+#loginProviders,
+#qrlogin {
+  display: none !important;
+}
+
+/* Ensure bigImage displays correctly */
+#bigImage {
+  flex: 1 !important;
+  min-height: 500px !important;
+  height: 100% !important;
+  background-image: url('../images/big-image.png') !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+}
+
+/* ============================================ */
+/* MASQUER HEADER + ÉLÉMENTS INUTILES */
+/* ============================================ */
+
+body > header,
+header,
+.cas-header,
+#loginSidePanel,
+#loginProviders,
+#qrlogin,
+#heroimg,
+.service-ui {
+  display: none !important;
+}
+
+/* MASQUER COMPLÈTEMENT LE BOUTON REVEAL PASSWORD */
+.reveal-password,
+.mdc-input-group-append,
+button.reveal-password,
+.mdc-icon-button.reveal-password {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
+
+/* Footer discret en bas */
+footer,
+body > footer {
+  position: fixed !important;
+  bottom: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  padding: 0.5rem !important;
+  text-align: center !important;
+  color: var(--color-dark-grey) !important;
+  font-size: 11px !important;
+  background: transparent !important;
 }
