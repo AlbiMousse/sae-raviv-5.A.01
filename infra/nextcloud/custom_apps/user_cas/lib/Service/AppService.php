@@ -309,7 +309,6 @@ class AppService
 
                     \phpCAS::client($this->casVersion, $this->casHostname, intval($this->casPort), $this->casPath);
                     \phpCAS::setServerServiceValidateURL("https://cas-server:8443/cas/serviceValidate");
-                    \phpCAS::setNoCasServerValidation();
                 }
 
                 # Handle SingleSignout requests
@@ -328,8 +327,7 @@ class AppService
                 # Handle certificate
                 if (!empty($this->casCertPath)) {
 
-                    #\phpCAS::setCasServerCACert($this->casCertPath);
-                    \phpCAS::setNoCasServerValidation();
+                    \phpCAS::setCasServerCACert($this->casCertPath);
                 } else {
 
                     \phpCAS::setNoCasServerValidation();
