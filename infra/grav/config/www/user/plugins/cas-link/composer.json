@@ -1,0 +1,25 @@
+{
+  "name": "116744793/cas-link",
+  "type": "grav-plugin",
+  "description": "A simple plugin that enables the user to connect to Grav using the ApereoCAS",
+  "version": "1.0.0",
+  "keywords": ["plugin"],
+  "homepage": "https://github.com/116744793/grav-plugin-cas-link",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Alban-Moussa ESTIENNE",
+      "email": "albanmoussa.estienne@gmail.com",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": ">=7.1.3"
+  },
+  "autoload": {
+    "psr-4": {
+      "Grav\\Plugin\\CasLink\\": "classes/"
+    },
+    "classmap":  ["cas-link.php"]
+  }
+}

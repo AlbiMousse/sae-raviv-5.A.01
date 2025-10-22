@@ -1,0 +1,42 @@
+name: Cas Link
+slug: cas-link
+type: plugin
+version: 0.1.0
+description: A simple plugin that enables the user to connect to Grav using the ApereoCAS
+icon: plug
+author:
+  name: Alban-Moussa ESTIENNE
+  email: albanmoussa.estienne@gmail.com
+homepage: https://github.com/116744793/grav-plugin-cas-link
+demo: http://demo.yoursite.com
+keywords: grav, plugin, etc
+bugs: https://github.com/116744793/grav-plugin-cas-link/issues
+docs: https://github.com/116744793/grav-plugin-cas-link/blob/develop/README.md
+license: MIT
+
+dependencies:
+  - { name: grav, version: '>=1.6.0' }
+
+name: Cas Link
+version: 0.1.0
+description: Adds CAS login integration for Grav.
+icon: sign-in
+author:
+  name: You
+  email: you@example.com
+
+form:
+  fields:
+    enabled:
+      type: toggle
+      label: Plugin status
+      highlight: 1
+      default: 1
+      options:
+        1: Enabled
+        0: Disabled
+    cas_server:
+      type: text
+      label: CAS Server URL
+      help: 'https://cas.server.edu/cas'
+
