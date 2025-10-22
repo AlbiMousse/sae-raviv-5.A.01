@@ -68,7 +68,6 @@ services:
     volumes:
       - nextcloud_data:/var/www/html
       - ./nextcloud/custom_apps/user_cas:/var/www/html/custom_apps/user_cas
-      
     ports:
       - "8081:80"
     restart: unless-stopped

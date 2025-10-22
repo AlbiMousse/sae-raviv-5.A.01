@@ -1,0 +1,12 @@
+{
+  "@class": "org.apereo.cas.services.CasRegisteredService",
+  "id": 101,
+  "name": "GravCMS",
+  "description": "GravCMS CAS login",
+  "serviceId": "^https?://(grav|localhost)(:8080)?(/.*)?$",
+  "evaluationOrder": 10,
+  "singleSignOnParticipationPolicy": {
+    "@class": "org.apereo.cas.services.DefaultRegisteredServiceSingleSignOnParticipationPolicy",
+    "createCookieOnRenewedAuthentication": "TRUE"
+  }
+}
