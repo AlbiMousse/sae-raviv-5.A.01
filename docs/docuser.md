@@ -1,14 +1,14 @@
----
-layout: default
-title: "Documentation Utilisateur"
----
-# DOCUMENTATION UTILISATEUR
+# Documentation utilisateur
 
-<img src="assets/img/raviv2.png" alt="RAVIV" width="200px" style="background-color:#fff;">
-
-<img src="assets/img/iut-blagnac.jpg" alt="IUT de Blagnac" width="200px">
-
+<img src="assets/img/raviv2.png" alt="RAVIV" width="200px" style="background-color:#fff;">  
+<img src="assets/img/iut-blagnac.jpg" alt="IUT de Blagnac" width="200px">  
 <img src="assets/img/ut2j.jpg" alt="UT2J" width="200px">
+
+---
+
+## Sommaire
+[1. Présentation de l'application](#1-présentation-de-lapplication)  
+[2. Fonctionnalités](#2-fonctionnalités)
 
 ---
 
@@ -19,9 +19,6 @@ title: "Documentation Utilisateur"
 | ![Figure 2.1 - Use Case Général](assets/img/uc/uc.png) |
 |:-----------------------------------------:|
 | Figure 2.1 - Use Case Général |
-
-## Table des illustrations
-% lof %
 
 ---
 
