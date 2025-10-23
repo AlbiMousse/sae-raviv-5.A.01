@@ -11,8 +11,8 @@
 &emsp;[1.1 Objectif de la solution](#11-objectif-et-fonctionnement)  
 &emsp;[1.2 Description des fonctionnalités](#12-description-des-fonctionnalités)  
 [2. Architecture de la solution](#2-architecture-de-la-solution)  
-&emsp;[2.1. Architecture générale](#21-architecture-générale)
-&emsp;[2.2. Arborescence](#22-arborescence)
+&emsp;[2.1. Architecture générale](#21-architecture-générale)  
+&emsp;[2.2. Arborescence](#22-arborescence)  
 [3. Conception et mise en oeuvre des fonctionnalités](#3-conception-et-mise-en-oeuvre-des-fonctionnalités)  
 [4. Procédures d'installation](#4-procédures-dinstallation)
 
