@@ -109,6 +109,24 @@ pre code {
   padding: 0;
   border-radius: 0;
 }
+.highlight pre {
+  background-color: #131316;
+  color: #dcdcd3;
+  border-radius: 6px;
+  padding: 1rem;
+  overflow-x: auto;
+  font-family: 'Fira Code', monospace;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+.highlight .c     { color: #6a9955; } /* commentaires */
+.highlight .k     { color: #569cd6; } /* mots-clés */
+.highlight .s     { color: #ce9178; } /* chaînes */
+.highlight .p     { color: #d4d4d4; } /* ponctuation */
+.highlight .nb    { color: #9cdcfe; } /* variables */
+.highlight .nf    { color: #dcdcaa; } /* fonctions */
+.highlight .o     { color: #c586c0; } /* opérateurs */
+.highlight .mi    { color: #b5cea8; } /* nombres */
 
 img {
   max-width: 100%;
