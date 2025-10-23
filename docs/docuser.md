@@ -79,7 +79,7 @@
 
 **Étape 4 :** Maintenant, nous allons pouvoir ajouter un utilisateur, la méthode est similaire à l'ajout d'un groupe. Comme précédemment, pour ajouter un utilisateur cliquer sur `ou=users`.
 
-![Page utilisateur](assets/img/tutorials/ldap/2-1-creer-nouvelle-entree.png")
+![Page utilisateur](assets/img/tutorials/ldap/2-1-creer-nouvelle-entree.png)
 
 ---
 
