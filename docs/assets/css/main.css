@@ -26,6 +26,10 @@ main {
   gap: 1rem;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  padding-bottom: 0.2rem;
+}
+
 a {
   color: #a8b1ff;
 }
