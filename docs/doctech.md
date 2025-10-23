@@ -48,7 +48,7 @@ Si l'utilisateur se déconnecte sur l'un des outils RAVIV, alors l'utilisateur e
 
 ### 2.2. Arborescence
 
-#### *_Arborescence du projet_*
+#### *Arborescence du projet*
 
 ```
 sae-raviv-5.A.01/
@@ -78,7 +78,7 @@ sae-raviv-5.A.01/
     └── main.css
 ```
 
-#### *_Description des répertoires et fichiers_*
+#### *Description des répertoires et fichiers*
 
 **`cas-ldap/`** : Contient l'implémentation du serveur CAS (Central Authentication Service) avec intégration LDAP.
 
