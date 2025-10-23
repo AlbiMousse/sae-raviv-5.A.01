@@ -31,6 +31,24 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
 }
+h1 {
+  margin-top: 0.1rem;
+}
+h2 {
+  margin-top: 0.75rem;
+}
+h3 {
+  margin-top: 0.5rem;
+}
+h4 {
+  margin-top: 0.3rem;
+}
+h5 {
+  margin-top: 0.2rem;
+}
+h6 {
+  margin-top: 0.1rem;
+}
 
 a {
   color: #a8b1ff;
