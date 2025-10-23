@@ -86,7 +86,7 @@ blockquote {
 }
 
 code {
-  background-color: #0f0f11;
+  background-color: #131316;
   color: #dcdcd3;
   border-radius: 6px;
   padding: 0.4rem 0.6rem;
@@ -94,12 +94,13 @@ code {
   font-size: 0.95rem;
 }
 pre {
-  background-color: #0f0f11;
+  background-color: #131316;
   color: #dcdcd3;
   border-radius: 6px;
   padding: 0.4rem 0.6rem;
   font-family: 'Fira Code', monospace;
   font-size: 0.95rem;
+  line-height: 1.4;
 }
 pre code {
   background: none;
