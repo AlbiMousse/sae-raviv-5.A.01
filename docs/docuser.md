@@ -34,7 +34,7 @@
 | **Description** | L'ajout d'un compte permet de créer un nouveau compte utilisateur dans le système. Lorsqu'un utilisateur est ajouté :<br> - L'utilisateur est enregistré dans la liste des utilisateurs de l'association RAVIV.<br>- Un compte utilisateur est créé avec les informations fournies.<br>- L'utilisateur peut immédiatement accéder aux services connectés (forum Discourse, Nextcloud, site web Grav). |
 
 ##### **Prérequis**
-- Être connecté à l'annuaire LDAP en tant qu'*Administrateur*. 
+Être connecté à l'annuaire LDAP en tant qu'*Administrateur*. 
 
 ![Espace administration](assets/img/tutorials/ldap/prerequis.png)
 
