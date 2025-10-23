@@ -27,10 +27,12 @@
 |:----------------|:----------------|
 | **Intitulé** | Connexion au forum Discourse |
 | **Objectif** | Tester la connexion d'un membre au forum Discourse. |
+| **Pré-condition générale** | L'utilisateur possède un compte membre lui donnant accès aux outils RAVIV. |
 
 | **ID** | **PAGE** | **PRÉ-CONDITION** | **ACTIONS** | **COMPORTEMENT ATTENDU** | **RÉSULTAT** |
 |:-------|:---------|:------------------|:------------|:-------------------------|-------------:|
-| | | | | | |
+| CO-DISC.01 | Formulaire de connexion au forum Discourse | Aucune | Clic sur le bouton `Connexion via OpenID Connect` | Redirection vers le portail de connexion CAS | |
+| CO-DISC.02 | Portail de connexion CAS | Aucune | Saisie des identifiants de connexion | |
 
 > **Commentaire**  
 > 
@@ -41,10 +43,12 @@
 |:----------------|:----------------|
 | **Intitulé** | Connexion au NAS Synology |
 | **Objectif** | Tester la connexion d'un membre au NAS Synology. |
+| **Pré-condition générale** | L'utilisateur possède un compte membre lui donnant accès aux outils RAVIV. |
 
 | **ID** | **PAGE** | **PRÉ-CONDITION** | **ACTIONS** | **COMPORTEMENT ATTENDU** | **RÉSULTAT** |
 |:-------|:---------|:------------------|:------------|:-------------------------|-------------:|
-| | | | | | |
+| CO-NAS.01 | Formulaire de connexion au NAS Synology | Aucune | Clic sur le bouton `Connexion via CAS` | Redirection vers le portail de connexion CAS | |
+| CO-NAS.02 | Portail de connexion CAS | Aucune | Saisie des identifiants de connexion | |
 
 > **Commentaire**  
 > 
@@ -55,10 +59,12 @@
 |:----------------|:----------------|
 | **Intitulé** | Connexion à l'espace membre du site web RAVIV. |
 | **Objectif** | Tester la connexion d'un membre à son espace privé sur le site web RAVIV. |
+| **Pré-condition générale** | L'utilisateur possède un compte membre lui donnant accès aux outils RAVIV. |
 
 | **ID** | **PAGE** | **PRÉ-CONDITION** | **ACTIONS** | **COMPORTEMENT ATTENDU** | **RÉSULTAT** |
 |:-------|:---------|:------------------|:------------|:-------------------------|-------------:|
-| | | | | | |
+| CO-WEB.01 | Page quelconque du site | Aucune | Clic sur le bouton `Connexion` | Redirection vers le portail de connexion CAS | |
+| CO-WEB.02 | Portail de connexion CAS | Aucune | Saisie des identifiants de connexion | |
 
 > **Commentaire**  
 > 
