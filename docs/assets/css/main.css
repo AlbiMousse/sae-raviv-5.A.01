@@ -93,6 +93,19 @@ code {
   font-family: 'Fira Code', monospace;
   font-size: 0.95rem;
 }
+pre {
+  background-color: #0f0f11;
+  color: #dcdcd3;
+  border-radius: 6px;
+  padding: 0.4rem 0.6rem;
+  font-family: 'Fira Code', monospace;
+  font-size: 0.95rem;
+}
+pre code {
+  background: none;
+  padding: 0;
+  border-radius: 0;
+}
 
 img {
   max-width: 100%;
