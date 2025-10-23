@@ -90,7 +90,7 @@ code {
   background-color: #131316;
   color: #dcdcd3;
   border-radius: 0.15rem;
-  padding: 0.4rem 0.4rem;
+  padding: 0.3rem;
   font-family: 'Fira Code', monospace;
   font-size: 0.95rem;
 }
@@ -99,10 +99,10 @@ pre {
   background-color: #131316;
   color: #dcdcd3;
   border-radius: 0.3rem;
-  padding: 0.75rem 0.5rem;
+  padding: 0.75rem;
   font-family: 'Fira Code', monospace;
   font-size: 0.95rem;
-  line-height: 1.6;
+  line-height: 1.55;
 }
 pre code {
   background: none;
