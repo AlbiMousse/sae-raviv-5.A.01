@@ -36,42 +36,38 @@
 ##### **Prérequis**
 - Être connecté à l'annuaire LDAP en tant qu'*Administrateur*. 
 
-<img src="assets/img/ldap/prerequis.png" alt="Espace administration">
+![Espace administration](assets/img/ldap/prerequis.png)
 
 ##### **Étapes d'utilisations**
 
-**Étape 1 :** Dans la page de `connexion`, enregistrez-vous en tant qu'administrateur avec le login et le mot de passe fournis.
+**Étape 1 :** Une fois dans la fenêtre d'administration, si vous voulez ajouter un nouvel utilisateur pour la première fois, il faut créer dans un premier temps un groupe. Pour ajouter un groupe cliquer sur `ou=groups`.
+
+![Page accueil](assets/img/ldap/1-1-creer-nouvelle-entree.png)
 
 ---
 
-**Étape 2 :** Une fois dans la fenêtre d'administration, si vous voulez ajouter un nouvel utilisateur pour la première fois, il faut créer dans un premier temps un groupe. Pour ajouter un groupe cliquer sur `ou=groups`.
-
-<img src="assets/img/ldap/1-1-creer-nouvelle-entree.png" alt="Page accueil">
-
----
-
-**Étape 3 :** Cliquez ensuite sur `Create a child entry`, puis sur `New Posix Group`. Une fois cela effectué, un formulaire apparaît, et vous devez y saisir :
+**Étape 2 :** Cliquez ensuite sur `Create a child entry`, puis sur `New Posix Group`. Une fois cela effectué, un formulaire apparaît, et vous devez y saisir :
 - `Group` : Le nom du groupe
 - `GID Number`: Group IDenfier Number, cela permettra de gérer les droits d'accès...
 - `Users` : Sélectionner les potentiels utilisateurs déjà existants pouvant être ajoutés à ce nouveau groupe
 
-<img src="assets/img/ldap/1-3-creer-nouveau-groupe-posix.png" alt="Page création groupe">
+![Page création groupe](assets/img/ldap/1-3-creer-nouveau-groupe-posix.png)
 
 *Voici un exemple de saisie :*
 
-<img src="assets/img/ldap/1-4-remplir-champs.png" alt="Page création groupe avec saisie">
+![Page création groupe avec saisie](assets/img/ldap/1-4-remplir-champs.png)
 
 ---
 
-**Étape 4 :** Une fois les champs remplis, appuyez sur le bouton `Create object`, une nouvelle et dernière page apparaît pour `commit` l'ajout du nouveau groupe.
+**Étape 3 :** Une fois les champs remplis, appuyez sur le bouton `Create object`, une nouvelle et dernière page apparaît pour `commit` l'ajout du nouveau groupe.
 
-<img src="assets/img/ldap/1-5-enregistrer-nouveau-groupe.png" alt="Page confirmation ajout d'un nouveau groupe">
+![Page confirmation ajout d'un nouveau groupe](assets/img/ldap/1-5-enregistrer-nouveau-groupe.png)
 
 ---
 
 **Résultat : ** Vous pouvez visualiser votre groupe dans la liste `ou=groups`, dans notre cas nous pouvons voir le groupe `cn=Nouveau Groupe`.
 
-<img src="assets/img/ldap/1-6-resultat.png" alt="Liste des groupes">
+![Liste des groupes](assets/img/ldap/1-6-resultat.png)
 
 ---
 
@@ -81,19 +77,19 @@
 
 ---
 
-**Étape 5 :** Maintenant, nous allons pouvoir ajouter un utilisateur, la méthode est similaire à l'ajout d'un groupe. Comme précédemment, pour ajouter un utilisateur cliquer sur `ou=users`.
+**Étape 4 :** Maintenant, nous allons pouvoir ajouter un utilisateur, la méthode est similaire à l'ajout d'un groupe. Comme précédemment, pour ajouter un utilisateur cliquer sur `ou=users`.
 
-<img src="assets/img/ldap/2-1-creer-nouvelle-entree.png" alt="Page utilisateur">
-
----
-
-**Étape 6 :** Cliquez ensuite sur `Create a child entry`, puis sur `Generic: User Account`. 
-
-<img src="assets/img/ldap/2-2-choisir-creer-nouveau-compte-utilisateur.pn" alt="Page choix template">
+![Page utilisateur](assets/img/ldap/2-1-creer-nouvelle-entree.png")
 
 ---
 
-**Étape 7 :** Une fois cela effectué, un formulaire apparaît, et vous devez y saisir :
+**Étape 5 :** Cliquez ensuite sur `Create a child entry`, puis sur `Generic: User Account`. 
+
+![Page choix template](assets/img/ldap/2-2-choisir-creer-nouveau-compte-utilisateur.png)
+
+---
+
+**Étape 6 :** Une fois cela effectué, un formulaire apparaît, et vous devez y saisir :
 - `First name` : Le prénom de l'utilisateur
 - `Last name` : Le nom de l'utilisateur
 - `Common Name` : Le nom commun composé de la façon suivante : Prenom Nom
@@ -104,25 +100,25 @@
 - `Home Directory` : Le répertoire personnel de l'utilisateur
 - `Login shell` : L'interpréteur de commande
 
-<img src="assets/img/ldap/2-3-creer-nouveau-compte-utilisateur.png" alt="Page création utilisateur">
+![Page création utilisateur](assets/img/ldap/2-3-creer-nouveau-compte-utilisateur.png)
 
 Voici un exemple de saisie :
 
-<img src="assets/img/ldap/2-4-remplir-champs-1.png" alt="Page création utilisateur avec saisies">
+![Page création utilisateur avec saisies](assets/img/ldap/2-4-remplir-champs-1.png)
 
-<img src="assets/img/ldap/2-4-remplir-champs-2.png" alt="Page création utilisateur avec saisie">
+![Page création utilisateur avec saisie](assets/img/ldap/2-4-remplir-champs-2.png)
 
 ---
 
-**Étape 8 :** Une fois les champs remplis, appuyez sur le bouton `Create object`, une nouvelle et dernière page apparaît pour `commit` l'ajout du nouvel utilisateur :
+**Étape 7 :** Une fois les champs remplis, appuyez sur le bouton `Create object`, une nouvelle et dernière page apparaît pour `commit` l'ajout du nouvel utilisateur :
 
-<img src="assets/img/ldap/2-5-enregistrer-nouveau-compte-utilisateur.png" alt="Page confirmation ajout d'un nouvel utilisateur">
+![Page confirmation ajout d'un nouvel utilisateur](assets/img/ldap/2-5-enregistrer-nouveau-compte-utilisateur.png)
 
 ---
 
 **Résultat : ** Vous pouvez visualiser votre utilisateur dans la liste `ou=users`, dans notre cas nous pouvons voir l'utilisateur `cn=John Powell`
 
-<img src="assets/img/ldap/2-6-resultat.png" alt="Liste des utilisateurs">
+![Liste des utilisateurs](assets/img/ldap/2-6-resultat.png)
 
 **Auteurs**  
 Thomas Aussenac  
