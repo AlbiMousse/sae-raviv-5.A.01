@@ -67,7 +67,7 @@
 
 **Résultat : ** Vous pouvez visualiser votre groupe dans la liste `ou=groups`, dans notre cas nous pouvons voir le groupe `cn=Nouveau Groupe`.
 
-![Liste des groupes](assets/img/tutorials/ldap/1-6-resultat.png)
+![Liste des groupes](assets/img/tutorials/ldap/1-resultat.png)
 
 ---
 
@@ -118,7 +118,7 @@ Voici un exemple de saisie :
 
 **Résultat : ** Vous pouvez visualiser votre utilisateur dans la liste `ou=users`, dans notre cas nous pouvons voir l'utilisateur `cn=John Powell`
 
-![Liste des utilisateurs](assets/img/tutorials/ldap/2-6-resultat.png)
+![Liste des utilisateurs](assets/img/tutorials/ldap/2-resultat.png)
 
 **Auteurs**  
 Thomas Aussenac  
