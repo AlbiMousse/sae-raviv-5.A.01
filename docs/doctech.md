@@ -26,16 +26,16 @@ La solution développée a pour objectif de fournir un système d'authentificati
 
 ### 1.2 Description des fonctionnalités
 
-##### **CRUD Utilisateurs**
+#### **CRUD Utilisateurs**
 Création, lecture, modification, suppression d'un utilisateur de l'annuaire LDAP
 
-##### **CRUD Groupes**
+#### **CRUD Groupes**
 Création, lecture, modification, suppression d'un groupe de l'annuaire LDAP. Cela permettra notamment d'affecter des droits aux utilisateurs.
 
-##### **Connexion aux outils de RAVIV**
+#### **Connexion aux outils de RAVIV**
 Si l'utilisateur se connecte sur l'un des outils RAVIV, alors l'utilisateur peux accéder aux deux autres sans avoir besoin de se connecter.
 
-##### **Déconnexion des outils RAVIV**
+#### **Déconnexion des outils RAVIV**
 Si l'utilisateur se déconnecte sur l'un des outils RAVIV, alors l'utilisateur est déconnecté sur l'ensemble des outils.
 
 ## 2. Architecture de la solution
