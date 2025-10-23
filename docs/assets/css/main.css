@@ -85,6 +85,15 @@ blockquote {
   font-style: italic;
 }
 
+code, pre {
+  background-color: #141416;
+  color: #dcdcd3;
+  border-radius: 6px;
+  padding: 0.4rem 0.6rem;
+  font-family: 'Fira Code', monospace;
+  font-size: 0.95rem;
+}
+
 img {
   max-width: 100%;
   height: auto;
