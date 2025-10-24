@@ -52,9 +52,12 @@ p {
   padding: 0;
 }
 
-ul {
+ul, ol {
   margin-top: 0rem;
   margin-bottom: 0rem;
+}
+li {
+  min-height: 2rem;
 }
 
 a {
