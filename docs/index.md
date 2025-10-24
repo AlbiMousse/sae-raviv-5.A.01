@@ -4,13 +4,13 @@
 
 ---
 
-## Utilisation
+#### Utilisation
 [Documentation Utilisateur](docuser.md)
 
-## Développement
+#### Développement
 [Document de Conception](docconcept.md)  
 [Documentation Technique](doctech.md)  
 [Cahier de Recette](recette.md)
 
-## Environnement de développement
+#### Environnement de développement
 [Configuration d’un Conteneur Discourse](infra/agend.md)
