@@ -195,7 +195,8 @@ nav#pages .menu-section span {
   justify-content: left;
   align-items: center;
   width: 100%;
-  height: 2rem;
+  min-height: 2rem;
+  box-sizing: border-box;
 }
 nav#pages .menu-section span.title {
   color: #dfdfd6;
