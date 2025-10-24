@@ -27,7 +27,7 @@ La solution développée a pour objectif de fournir un système d'authentificati
 ### 1.2 Description des fonctionnalités
 
 #### **CRUD Utilisateurs**
-Création, lecture, modification, suppression d'un utilisateur de l'annuaire LDAP
+Création, lecture, modification, suppression d'un utilisateur de l'annuaire LDAP.
 
 #### **CRUD Groupes**
 Création, lecture, modification, suppression d'un groupe de l'annuaire LDAP. Cela permettra notamment d'affecter des droits aux utilisateurs.
