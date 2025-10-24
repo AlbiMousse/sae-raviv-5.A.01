@@ -195,7 +195,7 @@ nav#pages .menu-section span {
   justify-content: left;
   align-items: center;
   width: 100%;
-  min-height: 2rem;
+  padding: 0rem 0.3rem;
   box-sizing: border-box;
 }
 nav#pages .menu-section span.title {
