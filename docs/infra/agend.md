@@ -1,4 +1,4 @@
-# Configuration d'un container Discourse
+# Configuration d'un Conteneur Discourse
 
 > **Auteur :** Victor Jockin
 

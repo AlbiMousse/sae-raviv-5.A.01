@@ -1,4 +1,16 @@
 # Accueil
+
+<img src="assets/img/raviv.png" alt="RAVIV" width="300px">
+
+---
+
+## Utilisation
+[Documentation Utilisateur](docuser.md)
+
+## Développement
 [Document de Conception](docconcept.md)  
 [Documentation Technique](doctech.md)  
-[Documentation Utilisateur](docuser.md)
+[Cahier de Recette](recette.md)
+
+## Environnement de développement
+[Configuration d’un Conteneur Discourse](infra/agend.md)
