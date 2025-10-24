@@ -53,11 +53,11 @@ p {
 }
 
 ul, ol {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
   margin-top: 0rem;
   margin-bottom: 0rem;
-}
-li {
-  min-height: 2rem;
 }
 
 a {
