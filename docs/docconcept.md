@@ -26,6 +26,11 @@
 | Figure 2.1.1 - Maquette du portail de connexion aux services RAVIV |
 
 ### 2.2 Réalisation de la solution
+
+| ![Figure 2.2.1 - Architecture de la solution](assets/img/diagrams/gad.png) |
+|:-:|
+| Figure 2.2.1 - Architecture de la solution |
+
 ## 3. Contraintes techniques
 
 ---
