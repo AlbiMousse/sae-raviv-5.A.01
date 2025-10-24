@@ -61,6 +61,11 @@ ul, ol {
   margin-left: 1em;
   padding-left: 1em;
 }
+li {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
 
 a {
   color: #a8b1ff;

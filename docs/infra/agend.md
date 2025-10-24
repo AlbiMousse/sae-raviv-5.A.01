@@ -88,7 +88,7 @@ if ! $docker_path info 2> /dev/null | grep -E -q 'Storage Driver: (btrfs|aufs|zf
 fi
 ```
 
-3. Commenter le bloc :
+3. Commenter le bloc.
 ```shell
 #if ! $docker_path info 2> /dev/null | grep -E -q 'Storage Driver: (btrfs|aufs|zfs|overlay2)$'; then
   #echo "Your Docker installation is not using a supported storage driver.  If we were to proceed you may have a broken install."
@@ -124,38 +124,32 @@ Avant d'effectuer un rebuild, le fichier `launcher` se met à jour depuis GitHub
 #### 2.2.2. Solution
 
 1. Repérer les fichiers que Git considère comme ayant été modifiés :
-
 ```bash
 git status
 ```
 
 2. Sauvegarder les modifications locales :
-
 ```bash
 git stash push -m "saving updated launcher"
 ```
 
 3. Mettre à jour le dépôt :
-
 ```bash
 git pull
 ```
 
 4. Réappliquer les modifications locales :
-
 ```bash
 git stash pop
 ```
 
 5. Valider les modifications locales :
-
 ```bash
 git add launcher
 git commit -m "manual merger of launcher"
 ```
 
 6. Lancer le rebuild :
-
 ```bash
 ./launcher rebuild app
 ```
