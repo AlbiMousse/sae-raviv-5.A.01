@@ -16,7 +16,7 @@
 
 ## 2. Fonctionnalités
 
-| ![Figure 2.1 - Diagramme des cas d’usage du système d’authentification CAS/LDAP](assets/img/uc/UssageSSO.png) |
+| ![Figure 2.1 - Diagramme des cas d’usage du système d’authentification CAS/LDAP](assets/img/uc/UsageSSO.png) |
 |:-----------------------------------------:|
 | Figure 2.1 - Diagramme des cas d’usage du système d’authentification CAS/LDAP |
 
