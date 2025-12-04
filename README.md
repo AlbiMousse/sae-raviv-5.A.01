@@ -159,6 +159,7 @@ Cette section regroupe les ordres du jour et compte rendus de chaque r√©union r√
 |----------|:-----------------:|:----------------:|
 | Jeudi 4 Septembre 2025 | [ODJ1](https://github.com/AlbiMousse/sae-raviv-5.A.01/tree/main/docs/meetings/ODJ1.pdf) | [CR1](https://github.com/AlbiMousse/sae-raviv-5.A.01/tree/main/docs/meetings/CR1.pdf) |
 | Mardi 30 Septembre 2025 | [ODJ2](https://github.com/AlbiMousse/sae-raviv-5.A.01/tree/main/docs/meetings/ODJ2.pdf) | [CR2](https://github.com/AlbiMousse/sae-raviv-5.A.01/tree/main/docs/meetings/CR2.pdf) |
+| Jeudi 23 Octobre 2025 | [ODJ3](https://github.com/AlbiMousse/sae-raviv-5.A.01/tree/main/docs/meetings/ODJ3.pdf) | [CR3](https://github.com/AlbiMousse/sae-raviv-5.A.01/tree/main/docs/meetings/CR3.pdf) |
 
 ---
 
