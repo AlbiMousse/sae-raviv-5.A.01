@@ -40,7 +40,7 @@ Si l'utilisateur se déconnecte sur l'un des outils RAVIV, alors l'utilisateur e
 
 ### 2.1. Architecture générale
 
-| ![Figure 2.1 - Diagramme d'Architecture Générale](assets/img/diagrams/gad.png) |
+| ![Figure 2.1 - Diagramme d'Architecture Générale](/assets/img/diagrams/gad.png) |
 |:-:|
 | Figure 2.1 - Diagramme d'Architecture Générale |
 
@@ -60,11 +60,6 @@ sae-raviv-5.A.01/
 │       │       └── config/
 │       ├── gradle/
 │       └── src/
-├── docs/
-│   ├── docuser.md
-│   ├── doctech.md
-│   └── assets/
-│       └── img/
 ├── infra/
 │   ├── docker-compose.yml
 │   ├── cas/
@@ -93,14 +88,6 @@ sae-raviv-5.A.01/
   - **`gradle/`** : Scripts et configuration Gradle pour la gestion du projet.
 
   - **`src/`** : Code source Java du serveur CAS customisé.
-
-**`docs/`** : Documentation complète du projet.
-
-  - **`docuser.md`** : Documentation utilisateur détaillant les procédures d'utilisation.
-
-  - **`doctech.md`** : Documentation technique (architecture, installation, configuration).
-
-  - **`assets/img/`** : Ressources images (diagrammes, captures d'écran, logos).
 
 **`infra/`** : Infrastructure de déploiement et configuration des services.
 
