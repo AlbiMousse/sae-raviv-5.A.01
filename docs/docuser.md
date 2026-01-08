@@ -16,7 +16,7 @@
 
 ## 2. Fonctionnalités
 
-| ![Figure 2.1 - Diagramme des cas d’usage du système d’authentification CAS/LDAP](assets/img/uc/UsageSSO.png) |
+| ![Figure 2.1 - Diagramme des cas d’usage du système d’authentification CAS/LDAP](assets/img/uc/sso-uc.png) |
 |:-----------------------------------------:|
 | Figure 2.1 - Diagramme des cas d’usage du système d’authentification CAS/LDAP |
 
@@ -125,18 +125,15 @@ Voici un exemple de saisie :
 | **Fonctionnalité** | Se connecter à un service RAVIV |
 | **Description** | Cette fonctionnalité permet à un utilisateur de se connecter aux différents services RAVIV (Grav et Nextcloud) en utilisant ses identifiants LDAP via le portail CAS Login. Une fois l'utilisateur authentifié, il peut accéder directement aux services connectés sans avoir besoin de se reconnecter. |
 
-| **Prérequis** |
-|:-------:|
+##### **Prérequis**
 - Disposer d'un compte utilisateur créé dans l'annuaire LDAP par un administrateur.
 - Connaître ses identifiants de connexion (nom d'utilisateur et mot de passe définis lors de la création du compte).
 
-| **Services disponibles** |
-|:-------:|
-- **Grav** : Système de gestion de contenu pour le site web RAVIV
-- **Nextcloud** : Plateforme de stockage et de collaboration en ligne
+##### **Services disponibles**
+- **Grav** : Système de gestion de contenu pour le site web RAVIV.
+- **Nextcloud** : Plateforme de stockage et de collaboration en ligne.
 
-| **Étapes d'utilisation** |
-|:-------:|
+##### **Étapes d'utilisation**
 
 **Étape 1 :** Accédez au portail de connexion de l'outil de votre choix. Vous verrez la page d'accueil avec les options de connexion.
 
@@ -158,15 +155,13 @@ Voici un exemple de saisie :
 
 **Étape 5 :** Vous êtes maintenant connecté au service choisi. Votre session est automatiquement maintenue tant que vous restez actif et que la session n'a pas expiré.
 
-| **Avantages du SSO (Single Sign-On)** |
-|:-------:|
+##### **Avantages du SSO (Single Sign-On)**
 - **Connexion unique** : Un seul jeu d'identifiants pour tous les services RAVIV
 - **Sécurité renforcée** : Authentification centralisée via l'annuaire LDAP
 - **Simplicité d'usage** : Pas besoin de retenir plusieurs mots de passe
 - **Gestion centralisée** : Les administrateurs peuvent gérer les accès depuis un point unique
 
-| **Remarques importantes** |
-|:-------:|
+##### **Remarques importantes**
 - En cas d'oubli de vos identifiants, contactez un administrateur RAVIV
 - Votre accès aux services dépend des droits qui vous ont été attribués lors de la création de votre compte
 - Pour des raisons de sécurité, pensez à vous déconnecter à la fin de votre session
