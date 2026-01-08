@@ -12,6 +12,15 @@
 &emsp;[2.1. Architecture générale](#21-architecture-générale)  
 &emsp;[2.2. Arborescence](#22-arborescence)  
 [3. Conception et mise en oeuvre des fonctionnalités](#3-conception-et-mise-en-oeuvre-des-fonctionnalités)  
+&emsp;[3.1. Intégration du portail de connexion](#31-intégration-du-portail-de-connexion)  
+&emsp;&emsp;[3.1.1. Technologies utilisées](#311-technologies-utilisées)  
+&emsp;&emsp;[3.1.2. Architecture du projet Apereo CAS](#312-architecture-du-projet-apereo-cas)  
+&emsp;&emsp;[3.1.3. Intégration du template](#313-intégration-du-template)  
+&emsp;&emsp;&emsp;[Étape 1 : Conversion des chemins statiques](#étape-1--conversion-des-chemins-statiques)  
+&emsp;&emsp;&emsp;[Étape 2 : Intégration des attributs thymeleaf dans le formulaire](#étape-2--intégration-des-attributs-thymeleaf-dans-le-formulaire)  
+&emsp;&emsp;&emsp;[Étape 3 : Gestion des erreurs d'authentification](#étape-3--gestion-des-erreurs-dauthentification)  
+&emsp;&emsp;[3.1.4. Gestion de la réinitialisation des mots de passe](#314-gestion-de-la-réinitialisation-des-mots-de-passe)  
+&emsp;&emsp;[3.1.5. Résolution du problème d'affichage du logo](#315-résolution-du-problème-daffichage-du-logo)  
 [4. Procédures d'installation](#4-procédures-dinstallation)
 
 ---
@@ -109,7 +118,7 @@ sae-raviv-5.A.01/
 
 ## 3. Conception et mise en oeuvre des fonctionnalités
 
-### 3.1. Intégration du protail du portail de connexion
+### 3.1. Intégration du portail de connexion
 
 Cette section décrit le processus d'intégration du template du portail de connexion au serveur CAS. L'objectif était de remplacer la page de connexion par défaut fournie par Apereo CAS par une interface personnalisée respectant la charte graphique RAVIV, tout en conservant toutes les fonctionnalités d'authentification centralisée du système SSO.
 
@@ -120,7 +129,7 @@ Cette section décrit le processus d'intégration du template du portail de conn
 ##### Réalisation du portail
 
 | **TECHNOLOGIES** | **RÔLE** |
-|------------------|----------|
+|:-----------------|:---------|
 | **HTML5** | Structure des pages |
 | **CSS3** | Styles personnalisés avec variables CSS |
 | **JavaScript/jQuery** | Interactions client et requêtes |
@@ -129,7 +138,7 @@ Cette section décrit le processus d'intégration du template du portail de conn
 ##### Intégration
 
 | **Technologie** | **Version** | **Rôle** |
-|-----------------|-------------|----------|
+|:----------------|:------------|:---------|
 | **Apereo CAS** | 7.x | Serveur d'authentification centralisée (SSO) |
 | **Thymeleaf** | 3.x | Moteur de templates côté serveur pour Java |
 | **Spring Boot** | 3.x | Framework Java pour CAS |
