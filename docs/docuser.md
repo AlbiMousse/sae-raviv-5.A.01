@@ -34,6 +34,10 @@
 ##### **Prérequis**
 Être connecté à l'annuaire LDAP en tant qu'*Administrateur*. 
 
+> ⚠️​ **IMPORTANT** ⚠️  
+> **Il est obligatoire de créer un groupe pour pouvoir créer un utilisateur !**  
+> Un utilisateur appartient obligatoirement à un groupe POSIX.
+
 ![Espace administration](/assets/img/tutorials/ldap/prerequis.png)
 
 ##### **Étapes d'utilisations**
@@ -66,12 +70,6 @@
 **Résultat :** Vous pouvez visualiser votre groupe dans la liste `ou=groups`, dans notre cas nous pouvons voir le groupe `cn=Nouveau Groupe`.
 
 ![Liste des groupes](/assets/img/tutorials/ldap/1-resultat.png)
-
----
-
-> ⚠️​ **IMPORTANT** ⚠️  
-> **Il est obligatoire de créer un groupe pour pouvoir créer un utilisateur !**  
-> Un utilisateur appartient obligatoirement à un groupe POSIX.
 
 ---
 
