@@ -50,7 +50,7 @@
 
 **Étape 2 :** Cliquez ensuite sur `Create a child entry`, puis sur `New Posix Group`. Une fois cela effectué, un formulaire apparaît, et vous devez y saisir :
 - `Group` : Le nom du groupe
-- `GID Number`: Group IDenfier Number, cela permettra de gérer les droits d'accès...
+- `GID Number`: Group IDentifier Number, cela permettra de gérer les droits d'accès...
 - `Users` : Sélectionner les potentiels utilisateurs déjà existants pouvant être ajoutés à ce nouveau groupe
 
 ![Page création groupe](/assets/img/tutorials/ldap/1-3-creer-nouveau-groupe-posix.png)
@@ -91,7 +91,7 @@
 - `Common Name` : Le nom commun composé de la façon suivante : Prenom Nom
 - `User ID` : Le user ID est généré automatiquement avec les informations écrites précédemment
 - `Password` : Le mot de passe de l'utilisateur
-- `UID Number` : User IDenfier Number
+- `UID Number` : User IDentifier Number
 - `GID Number` : La liaison avec le groupe dans l'étape 3
 - `Home Directory` : Le répertoire personnel de l'utilisateur
 - `Login shell` : L'interpréteur de commande
@@ -168,7 +168,7 @@ Voici un exemple de saisie :
 **Auteurs**  
 Thomas Aussenac  
 Alban-Moussa Estienne  
-Jules Giard--Pellat  
+Jules Giard\-\-Pellat  
 Victor Jockin  
 Mathys Laguilliez  
 Quentin Martinez  
