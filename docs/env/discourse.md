@@ -1,6 +1,6 @@
 # Configuration d'un Conteneur Discourse
 
-![Discourse Logo](/docs/assets/img/apps/discourse.jpeg)
+![Discourse Logo](../assets/img/apps/discourse.jpeg)
 
 > **Auteur :** Victor Jockin
 
