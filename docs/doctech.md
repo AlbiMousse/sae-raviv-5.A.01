@@ -477,17 +477,95 @@ L'image est trouvé :
 
 ![Preuve d'accès à l'image RAVIV](assets/img/tech/cas-template-raviv-logo.png)
 
+### 3.2 Mise en place d'un annuaire LDAP
+
+Le service `LDAP` **(Lightweight Directory Access Protocol)** est un protocole utilisé pour accéder et gérer des informations dans un annuaire. Dans notre projet, nous utilisons LDAP pour centraliser la gestion des utilisateurs et des authentifications. 
+
+Le serveur LDAP stocke les informations des utilisateurs, telles que les identifiants, les mots de passe et les attributs associés. Lorsqu'un utilisateur tente de se connecter à l'application RAVIV ou à d'autres services intégrés, le serveur LDAP est consulté pour vérifier les informations d'identification.
+
+Pour cela nous avons utilisé l'image Docker `bitnamilegacy/openldap:latest` qui fournit un serveur OpenLDAP complet avec une configuration flexible. Cette image est accompagnée de l'interface d'administration `osixia/phpldapadmin:stable` permettant une gestion graphique simplifiée de l'annuaire LDAP.
+
+#### 3.2.1. Configuration du serveur
+
+Le serveur LDAP est configuré avec les paramètres suivants :
+- **Domaine racine** : `dc=raviv,dc=local`
+- **Administrateur** : `admin` avec le mot de passe `adminpassword`
+- **Port d'écoute** : 389 (LDAP non sécurisé pour le développement)
+- **TLS** : désactivé pour simplifier la configuration en environnement de développement
+
+#### 3.2.2. Interface d'administration phpLDAPadmin
+
+L'interface phpLDAPadmin est accessible sur le port 8083 et permet :
+- La gestion des utilisateurs et des groupes
+- La visualisation de l'arborescence LDAP
+- La modification des attributs des entrées
+- L'import/export de données LDAP
+
+Cette interface se connecte automatiquement au serveur LDAP via le réseau Docker interne.
+
+#### 3.2.3. Volumes de données
+
+Les données LDAP sont persistées grâce à deux volumes Docker :
+- `ldap_data` : stockage des données de l'annuaire
+- `ldap_config` : stockage de la configuration slapd
+
+Cette configuration garantit la persistance des données même lors du redémarrage des conteneurs.
+
 ## 4. Procédures d'installation
 
----
+### 4.1 Récupération du projet
 
-**Auteurs**  
-Thomas Aussenac  
-Alban-Moussa Estienne  
-Jules Giard--Pellat  
-Victor Jockin  
-Mathys Laguilliez  
-Quentin Martinez  
+Pour récupérer le projet, il est nécessaire de cloner le dépôt GitHub à l'aide de la commande suivante : [Projet RAVIV](https://github.com/AlbiMousse/sae-raviv-5.A.01.git)
+
+Ainsi vous avez access au code source du projet sur votre machine locale, comprenant les fichiers de configuration `Docker Compose` et les scripts nécessaires pour déployer l'application.
+
+Une fois le dépôt cloné, naviguez dans le répertoire du projet : `infra` avec la commande suivante :
+``` bash
+cd infra
+```
+Puis dans le terminal exécutez la commande suivante pour lancer Docker Compose : 
+``` bash
+docker compose up -d
+```
+
+Une fois cela fait accédez à un outil comme le site web Raviv à l'adresse suivante : http://localhost:8080, ainsi vous pouvez entrer dans l'interface CAS l'identifiant et le mot de passe qui sont configuré dans le LDAP. Une fois connecté, vous pouvez accès aux différentes fonctionnalités de l'application et aux autres services déployés (forum Discourse et NAS Synology).
+
+### 4.2. Configuration du serveur CAS Apereo
+
+Le projet utilise **CAS Apereo** comme serveur d'authentification centralisée pour créer un portail de connexion unique, permettant l'accès aux différents outils de l'écosystème RAVIV : site web, forum Discourse et Nextcloud.
+
+Après avoir rencontré de nombreux problèmes de communication entre le service Discourse et le serveur CAS lors de l'utilisation de Docker sous Windows, nous avons pris la décision d'installer CAS Apereo directement sur un serveur Linux dédié. Cette approche présente plusieurs avantages :
+
+- **Réalisme de l'architecture** : Dans un environnement de production, le serveur d'authentification est généralement déployé sur une infrastructure dédiée
+- **Résolution des problèmes de réseau** : Évite les complications liées à la communication inter-conteneurs Docker
+- **Performance optimisée** : Installation native sur le système d'exploitation
+
+Le répertoire héberge l'image Apereo CAS utilisée pour notre projet et comporte les dossiers suivants :
+
+```
+└── cas-ldap/cas/     # L'image du CAS
+└── infra/            # Paramètres du CAS et Docker compose
+```
+### 4.3. Fonctionnement de la solution
+
+Nous utilisons donc un second PC sous Linux comme serveur dédié. Il exécute avec Docker le CAS sur l'adresse IP **172.20.10.8**.  
+Le CAS est donc décentralisé de notre configuration par défaut et accessible par les autres services via le réseau local.  
+
+En effet sous Windows, les contraintes de communication réseau empêchent la communication :
+
+- **Docker** utilise une IP par défaut : `host.docker.internal`
+- **Windows** utilise une IP par défaut : `localhost`
+
+Ainsi, docker n'arrive pas à communiquer vers `localhost`, et Windows n'arrive pas à communiquer vers `host.docker.internal` de Docker. Créant ainsi une impossibilité de communication entre les services.
+
+**Prérequis pour l'installation du serveur CAS :**
+- Un serveur ou PC secondaire sous Linux
+- Docker et Docker Compose installés
+- Accès réseau local entre le serveur CAS et les autres services
+
+> **Note importante :** Si vous disposez de moyens limités, vous pouvez utiliser un PC secondaire comme serveur CAS. L'important est que cette machine soit accessible en réseau par les autres services de l'infrastructure RAVIV.
+
+---
 
 ***BUT Informatique 3ème Année***  
 *IUT de Blagnac, Université Toulouse II - Jean Jaurès (31)*
