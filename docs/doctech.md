@@ -11,14 +11,21 @@
 [2. Architecture de la solution](#2-architecture-de-la-solution)  
 &emsp;[2.1. Architecture générale](#21-architecture-générale)  
 &emsp;[2.2. Arborescence](#22-arborescence)  
+&emsp;[2.3. Contraintes techniques](#23-contraintes-techniques)  
 [3. Conception et mise en oeuvre des fonctionnalités](#3-conception-et-mise-en-oeuvre-des-fonctionnalités)  
 &emsp;[3.1. Intégration du portail de connexion](#31-intégration-du-portail-de-connexion)  
 &emsp;&emsp;[3.1.1. Technologies utilisées](#311-technologies-utilisées)  
 &emsp;&emsp;[3.1.2. Architecture du projet Apereo CAS](#312-architecture-du-projet-apereo-cas)  
 &emsp;&emsp;[3.1.3. Intégration du template](#313-intégration-du-template)  
 &emsp;&emsp;[3.1.4. Gestion de la réinitialisation des mots de passe](#314-gestion-de-la-réinitialisation-des-mots-de-passe)  
-&emsp;&emsp;[3.1.5. Résolution du problème d'affichage du logo](#315-résolution-du-problème-daffichage-du-logo)  
-[4. Procédures d'installation](#4-procédures-dinstallation)
+&emsp;[3.2. Mise en place d'un annuaire LDAP](#32-mise-en-place-dun-annuaire-ldap)  
+&emsp;&emsp;[3.2.1. Configuration du serveur](#321-configuration-du-serveur)  
+&emsp;&emsp;[3.2.2. Interface d'administration phpLDAPAdmin](#322-interface-dadministration-phpldapadmin)  
+&emsp;&emsp;[3.2.3. Volumes de données](#323-volumes-de-données)  
+[4. Procédures d'installation](#4-procédures-dinstallation)  
+&emsp;[4.1. Récupération du projet](#41-récupération-du-projet)  
+&emsp;[4.2. Configuration du serveur Apereo CAS](#42-configuration-du-serveur-apereo-cas)  
+&emsp;[4.3. Fonctionnement de la solution](#43-fonctionnement-de-la-solution)
 
 ---
 
@@ -383,100 +390,6 @@ RAVIV a fait le choix de gérer la réinitialisation des mots de passe de maniè
    - L'utilisateur se connecte avec le mot de passe temporaire
    - (Optionnel) Changement obligatoire au premier login
 
-#### 3.1.5. Résolution du problème d'affichage du logo
-
-##### Problème identifié
-
-Lors de l'intégration initiale, le logo RAVIV ne s'affichait pas sur la page de connexion malgré la présence du fichier image et la configuration apparemment correcte.
-
-##### Analyse du problème
-
-**Référence dans le template :**
-```html
-<img id="ravivLogo" src="/images/raviv.png" alt="RAVIV">
-```
-
-**Structure des fichiers :**
-```
-src/main/resources/static/
-├── images/
-│   ├── raviv.png          # Fichier présent
-│   ├── big-image.png
-└── └── 
-...
-```
-
-##### Causes possibles
-
-**1. Problème de cache du navigateur :**
-- Le navigateur conserve l'ancienne version de la page
-- Les ressources statiques ne sont pas rechargées
-
-**2. Image non copiée lors du build Docker :**
-- Le Dockerfile ne copie pas correctement les ressources statiques
-- Les fichiers dans `src/main/resources/static/` ne sont pas inclus dans le WAR
-
-**3. Problème de chemin contextuel :**
-- CAS peut nécessiter un chemin contextuel (`/cas/images/...`)
-- La configuration du serveur peut affecter les chemins statiques
-
-**4. Build incomplet ou ancien :**
-- Le conteneur Docker utilise une ancienne version de l'image
-- Le build Gradle n'a pas correctement packagé les ressources
-
-##### Solutions testées
-
-###### Solution 1 : Vider le cache du navigateur
-```
-1. Ouvrir les outils de développement (F12)
-2. Clic droit sur le bouton Actualiser
-3. Sélectionner "Vider le cache et actualiser"
-```
-
-Ou en navigation privée :
-```
-Ctrl + Shift + N (Chrome)
-Ctrl + Shift + P (Firefox)
-```
-
-###### Solution 2 : Vérifier la configuration du chemin
-
-**Utiliser le helper Thymeleaf pour les ressources statiques :**
-```html
-<!-- AVANT (chemin absolu simple) -->
-<img id="ravivLogo" src="/images/raviv.png" alt="RAVIV">
-
-<!-- APRÈS (helper Thymeleaf) -->
-<img id="ravivLogo" th:src="@{/images/raviv.png}" src="/images/raviv.png" alt="RAVIV">
-```
-
-**Avantage du helper `@{...}` :**
-- Résolution automatique du contexte CAS (`/cas/...`)
-- Gestion des URL relatives et absolues
-- Compatibilité avec les proxies inverses
-
-##### Vérification finale
-
-**Checklist de vérification :**
-- [x] Fichier `raviv.png` présent dans `src/main/resources/static/images/`
-- [x] Chemin correct dans le template : `th:src="@{/images/raviv.png}"`
-- [x] Build Gradle réussi sans erreurs
-- [x] Image présente dans le WAR (vérification manuelle)
-- [x] Conteneur Docker redémarré avec la nouvelle image
-- [x] Cache navigateur vidé ou navigation privée
-- [ ] Image visible sur https://localhost:8443/cas/login
-- [ ] Aucune erreur 404 dans les logs CAS
-- [ ] Console navigateur sans erreur de chargement
-
-**Test d'accès direct à l'image :**
-```
-https://localhost:8443/cas/images/raviv.png
-```
-
-L'image est trouvé : 
-
-![Preuve d'accès à l'image RAVIV](assets/img/tech/cas-template-raviv-logo.png)
-
 ### 3.2 Mise en place d'un annuaire LDAP
 
 Le service `LDAP` **(Lightweight Directory Access Protocol)** est un protocole utilisé pour accéder et gérer des informations dans un annuaire. Dans notre projet, nous utilisons LDAP pour centraliser la gestion des utilisateurs et des authentifications. 
@@ -530,7 +443,7 @@ docker compose up -d
 
 Une fois cela fait accédez à un outil comme le site web Raviv à l'adresse suivante : http://localhost:8080, ainsi vous pouvez entrer dans l'interface CAS l'identifiant et le mot de passe qui sont configuré dans le LDAP. Une fois connecté, vous pouvez accès aux différentes fonctionnalités de l'application et aux autres services déployés (forum Discourse et NAS Synology).
 
-### 4.2. Configuration du serveur CAS Apereo
+### 4.2. Configuration du serveur Apereo CAS
 
 Le projet utilise **CAS Apereo** comme serveur d'authentification centralisée pour créer un portail de connexion unique, permettant l'accès aux différents outils de l'écosystème RAVIV : site web, forum Discourse et Nextcloud.
 
