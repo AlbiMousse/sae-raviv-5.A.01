@@ -1,46 +1,4 @@
 services:
-  # CAS server simulation
-  cas-server:
-    image: cas-ldap
-    container_name: cas-server
-    ports:
-      - "8443:8443"
-    environment:
-      - CAS_SERVER_NAME=https://localhost:8443
-    volumes:
-      - ./cas/config:/etc/cas/config
-      - ./cas/services:/tmp/cas
-      - ./cas/thekeystore:/etc/cas/thekeystore
-    restart: unless-stopped
-  ldap:
-    image: bitnamilegacy/openldap:latest
-    container_name: openldap
-    environment:
-      - LDAP_ROOT=dc=raviv,dc=local
-      - LDAP_ADMIN_USERNAME=admin
-      - LDAP_ADMIN_PASSWORD=adminpassword
-      - LDAP_ALLOW_ANON_BINDING=yes
-      - LDAP_SKIP_DEFAULT_TREE=no
-      - LDAP_ENABLE_TLS=no
-      - LDAP_PORT_NUMBER=389
-    ports:
-      - "389:389"
-      - "636:636"
-    volumes:
-      - ldap_data:/bitnami/openldap/data
-      - ldap_config:/bitnami/openldap/slapd.d
-    
-  phpldapadmin:
-    image: osixia/phpldapadmin:stable
-    container_name: phpldapadmin
-    environment:
-      - PHPLDAPADMIN_LDAP_HOSTS=ldap
-      - PHPLDAPADMIN_HTTPS=false
-    ports:
-      - "8083:80"
-    depends_on:
-      - ldap
-
   # RAVIV website simulation
   grav:
     image: lscr.io/linuxserver/grav:latest
@@ -54,29 +12,3 @@ services:
     ports:
       - "8080:80"
     restart: unless-stopped
-
-  # Synology NAS simulation
-  nextcloud:
-    image: nextcloud:24-apache
-    container_name: nextcloud
-    environment:
-      - SQLITE_DATABASE=nextcloud
-      - NEXTCLOUD_ADMIN_USER=admin
-      - NEXTCLOUD_ADMIN_PASSWORD=password123
-      - NEXTCLOUD_TRUSTED_DOMAINS=localhost
-      - APACHE_DISABLE_REWRITE_IP=1
-      #- CAS_SERVER_URL=http://localhost:8082/cas
-      #- CAS_SERVICE_URL=http://localhost:8081
-      #- CAS_AUTOCREATE_USER=1
-    volumes:
-      - nextcloud_data:/var/www/html
-      #- ./nextcloud-apps:/var/www/html/apps
-      #- ./nextcloud-config:/var/www/html/config
-    ports:
-      - "8081:80"
-    restart: unless-stopped
-
-volumes:
-  ldap_data:
-  ldap_config:
-  nextcloud_data:

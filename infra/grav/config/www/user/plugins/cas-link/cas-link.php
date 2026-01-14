@@ -132,7 +132,7 @@ protected function getCasUrls(): array
         $xml = $this->validateTicket($validateUrl);
 
         if (!$xml) {
-            print '[CAS] Failed to validate ticket or retrieve XML. Redirecting to clear ticket.';
+            $this->grav['log']->info('[CAS] Failed to validate ticket or retrieve XML. Redirecting to clear ticket.');
             $this->grav->redirect('/admin');
             return;
         }
@@ -140,7 +140,7 @@ protected function getCasUrls(): array
         $username = $this->extractUsernameFromXml($xml);
 
         if (!$username) {
-            print '[CAS] Ticket validation failed: no valid username found in response.';
+            $this->grav['log']->info('[CAS] Ticket validation failed: no valid username found in response.');
             $this->grav->redirect('/admin');
             return;
         }
@@ -177,7 +177,7 @@ protected function getCasUrls(): array
             
             // Check for cURL errors
             if (curl_errno($ch)) {
-                print '[CAS] cURL Error: ' . curl_error($ch);
+                $this->grav['log']->info('[CAS] cURL Error: ' . curl_error($ch));
                 $xml = null; // Ensure XML is null on failure
             }
             curl_close($ch);
@@ -194,7 +194,7 @@ protected function getCasUrls(): array
             $xml = @file_get_contents($validateUrl, false, $context);
 
             if ($xml === false) {
-                print '[CAS] Failed to retrieve validation XML via file_get_contents.';
+                $this->grav['log']->info('[CAS] Failed to retrieve validation XML via file_get_contents.');
                 $xml = null;
             }
         }
@@ -210,11 +210,12 @@ protected function getCasUrls(): array
     protected function extractUsernameFromXml(string $xml): ?string
     {
         try {
+            $this->grav['log']->info('[CAS] Raw validation response: ' . substr($xml, 0, 500));
             // Suppress error in case of bad XML format
             $parsed = @new \SimpleXMLElement($xml); 
             
             if ($parsed === false) {
-                print '[CAS] SimpleXMLElement failed to parse XML.';
+                $this->grav['log']->info('[CAS] SimpleXMLElement failed to parse XML.');
                 return null;
             }
 
@@ -230,12 +231,12 @@ protected function getCasUrls(): array
             // Check for failure
             if (isset($serviceResponse->authenticationFailure)) {
                 $message = (string)$serviceResponse->authenticationFailure;
-                print '[CAS] Ticket validation failed: ' . $message;
+                $this->grav['log']->info('[CAS] Ticket validation failed: ' . $message);
                 return null;
             }
 
         } catch (\Exception $e) {
-            print '[CAS] XML parse error: ' . $e->getMessage();
+            $this->grav['log']->info('[CAS] XML parse error: ' . $e->getMessage());
             return null;
         }
         
