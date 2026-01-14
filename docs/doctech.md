@@ -113,6 +113,14 @@ sae-raviv-5.A.01/
 
   - **`main.css`** : Feuilles de style pour l'interface de connexion.
 
+## 2.3 Contraintes techniques
+
+Dans le cadre de ce projet, nous avons fait le choix de simuler l'ensemble des outils utilisés par l'association RAVIV plutôt que de travailler directement sur l'environnement de production.
+
+Cette décision a été motivée par des considérations de sécurité et de conformité RGPD. Le prestataire de l'association n'a pas souhaité nous donner un accès direct aux données personnelles des adhérents, afin de respecter au maximum les réglementations en vigueur sur la protection des données.
+
+Pour répondre à cette contrainte tout en permettant le développement et les tests de notre solution, nous avons eu recours à **Docker** pour créer un environnement de simulation complet. Cette approche nous a permis de reproduire fidèlement l'écosystème technique de RAVIV (serveur LDAP, forum Discourse, NAS Nextcloud, site web) sans compromettre la confidentialité des données réelles.
+
 ## 3. Conception et mise en oeuvre des fonctionnalités
 
 ### 3.1. Intégration du portail de connexion
