@@ -16,9 +16,7 @@
 &emsp;&emsp;[3.1.1. Technologies utilisées](#311-technologies-utilisées)  
 &emsp;&emsp;[3.1.2. Architecture du projet Apereo CAS](#312-architecture-du-projet-apereo-cas)  
 &emsp;&emsp;[3.1.3. Intégration du template](#313-intégration-du-template)  
-&emsp;&emsp;&emsp;[Étape 1 : Conversion des chemins statiques](#étape-1--conversion-des-chemins-statiques)  
-&emsp;&emsp;&emsp;[Étape 2 : Intégration des attributs thymeleaf dans le formulaire](#étape-2--intégration-des-attributs-thymeleaf-dans-le-formulaire)  
-&emsp;&emsp;&emsp;[Étape 3 : Gestion des erreurs d'authentification](#étape-3--gestion-des-erreurs-dauthentification)  
+&emsp;&emsp;&emsp;[Étape 1 : Conversion des chemins statiques]
 &emsp;&emsp;[3.1.4. Gestion de la réinitialisation des mots de passe](#314-gestion-de-la-réinitialisation-des-mots-de-passe)  
 &emsp;&emsp;[3.1.5. Résolution du problème d'affichage du logo](#315-résolution-du-problème-daffichage-du-logo)  
 [4. Procédures d'installation](#4-procédures-dinstallation)
