@@ -1,9 +1,0 @@
-version: '1.2'
-timestamp: 1768471295
-count: 1
-index:
-  quentin:
-    storage_key: quentin
-    storage_timestamp: 1768470520
-    key: quentin
-    email: gitano@kenji.guitard
