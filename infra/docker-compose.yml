@@ -1,5 +1,19 @@
 services:
-  
+  # RAVIV website simulation
+  grav:
+    image: lscr.io/linuxserver/grav:latest
+    container_name: grav
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Europe/Paris
+    volumes:
+      - ./grav/config:/config
+    ports:
+      - "8080:80"
+    restart: unless-stopped
+    
+  # Synology NAS simulation
   nextcloud:
     image: nextcloud:31-apache
     container_name: nextcloud
@@ -17,4 +31,6 @@ services:
     restart: unless-stopped
 
 volumes:
+  ldap_data:
+  ldap_config:
   nextcloud_data:

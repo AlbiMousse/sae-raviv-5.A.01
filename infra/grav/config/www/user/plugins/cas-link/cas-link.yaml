@@ -1,0 +1,8 @@
+enabled: true
+# Supposed to end with /cas
+cas_server: 'https://172.20.10.8:443/cas' 
+# Only the DNS/IP and port of the CAS server
+cas_validation_server: "https://172.20.10.8:443"
+# The URL of this Grav instance's admin panel
+serviceUrl: 'http://localhost:8080/admin'
+text_var: Custom Text added by the **Cas Link** plugin (disable plugin to remove)
