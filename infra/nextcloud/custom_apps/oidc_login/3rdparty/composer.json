@@ -1,0 +1,12 @@
+{
+	"name": "oidc_login/3rdparty",
+	"description": "3rdparty components for oidc_login",
+	"config": {
+		"vendor-dir": ".",
+		"optimize-autoloader": true,
+		"classmap-authoritative": true
+	},
+	"require": {
+		"jumbojett/openid-connect-php": "^0.9.10"
+	}
+}
