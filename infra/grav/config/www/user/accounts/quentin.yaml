@@ -1,0 +1,11 @@
+state: enabled
+email: gitano@kenji.guitard
+fullname: 'Girac Quentin'
+title: Andalousia
+access:
+  admin:
+    login: true
+    super: true
+  site:
+    login: true
+hashed_password: $2y$10$CQSzSdYswwUaZRal8R/qB.S9QHQVB4cx3y0AUGww4jp6DwDLAABYW
