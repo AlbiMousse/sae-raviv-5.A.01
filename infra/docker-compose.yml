@@ -23,7 +23,7 @@ services:
       - APACHE_DISABLE_REWRITE_IP=1
     volumes:
       - nextcloud_data:/var/www/html
-      - ./nextcloud/oidc.config.php:/var/www/html/config/oidc.config.php
+      - ./nextcloud/oidc.config.php:/var/www/html/config/oidc.config.php:z
     ports:
       - "8081:80"
     restart: unless-stopped
