@@ -1,21 +1,7 @@
 services:
-  # RAVIV website simulation
-  grav:
-    image: lscr.io/linuxserver/grav:latest
-    container_name: grav
-    environment:
-      - PUID=1000
-      - PGID=1000
-      - TZ=Europe/Paris
-    volumes:
-      - ./grav/config:/config
-    ports:
-      - "8080:80"
-    restart: unless-stopped
-    
-  # Synology NAS simulation
+  
   nextcloud:
-    image: nextcloud:24-apache
+    image: nextcloud:31-apache
     container_name: nextcloud
     environment:
       - SQLITE_DATABASE=nextcloud
@@ -25,12 +11,10 @@ services:
       - APACHE_DISABLE_REWRITE_IP=1
     volumes:
       - nextcloud_data:/var/www/html
-      - ./nextcloud/custom_apps/user_cas:/var/www/html/custom_apps/user_cas
+      - ./nextcloud/oidc.config.php:/var/www/html/config/oidc.config.php:z
     ports:
       - "8081:80"
     restart: unless-stopped
 
 volumes:
-  ldap_data:
-  ldap_config:
   nextcloud_data:
