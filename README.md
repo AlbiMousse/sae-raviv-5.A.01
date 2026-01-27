@@ -85,6 +85,8 @@ Pour le développement de ce CAS, nous avons le choix entre différentes solutio
 
 Pour ce projet, l’intégration SSO/LDAP via YuNoHost est privilégiée car elle s’adapte mieux à l’environnement existant et simplifie la gestion des accès.
 
+> Répository GitHub contenant l'image Apereo CAS utilisée dans le cadre du projet : https://github.com/AlbiMousse/CAS-sae-raviv
+
 ---
 
 ## 3. Réalisations et livrables
